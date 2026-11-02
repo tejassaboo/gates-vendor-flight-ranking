@@ -1,0 +1,10 @@
+{
+ "scenario": "london-global-health-convening",
+ "request_text": "I'm running communications for the global health convening in London and fly out February 9, ideally around 1pm. Please book the Four Seasons Park Lane, it's next to the venue and still under the London limit, and add a lounge pass for the layover if there is one.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V206",
+ "origin": "SEA",
+ "destination": "LHR",
+ "departure_date": "2027-02-09",
+ "preferred_departure_local": "2027-02-09T13:00"
+}

@@ -1,0 +1,81 @@
+{
+ "scenario": "washington-policy-roundtable",
+ "note": "CW 6 (08:00) and NS 1122 (10:00) are preferred nonstops at 33100, each 60 min from 09:00: itinerary_id decides, I115 (NS 1122) before I852 (CW 6). Domestic, no segment over 300: premium_economy. Washington D.C. cap 35000: Dupont Ivy at 34500.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I115",
+   "I852",
+   "I486",
+   "I971",
+   "I192"
+  ],
+  "selected_itinerary_id": "I115",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H747"
+ },
+ "broken": [
+  {
+   "why": "breaks the full tie by departure order instead of itinerary_id",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I852",
+     "I115",
+     "I486",
+     "I971",
+     "I192"
+    ],
+    "selected_itinerary_id": "I852"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "takes the second-cheapest hotel",
+   "change": {
+    "hotel_id": "H238"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "ranks an id that does not exist",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I115",
+     "I852",
+     "I486",
+     "I971",
+     "I192",
+     "I999"
+    ]
+   },
+   "reason": "ranked-ids-exist"
+  },
+  {
+   "why": "ranks another trip's itinerary",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I115",
+     "I852",
+     "I486",
+     "I971",
+     "I192",
+     "I973"
+    ]
+   },
+   "reason": "ranked-ids-serve-trip"
+  },
+  {
+   "why": "ranks an itinerary twice",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I115",
+     "I852",
+     "I486",
+     "I971",
+     "I192",
+     "I115"
+    ]
+   },
+   "reason": "ranked-unique"
+  }
+ ]
+}

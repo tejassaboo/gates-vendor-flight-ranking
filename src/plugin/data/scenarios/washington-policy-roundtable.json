@@ -1,0 +1,10 @@
+{
+ "scenario": "washington-policy-roundtable",
+ "request_text": "Booking DC for the immunization-financing roundtable on Capitol Hill. I fly January 26 and honestly the 8am and the 10am are equally good for me; 9am would be ideal. My colleague always stays at the Four Seasons in Georgetown, but anything near Dupont works.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V207",
+ "origin": "SEA",
+ "destination": "DCA",
+ "departure_date": "2027-01-26",
+ "preferred_departure_local": "2027-01-26T09:00"
+}

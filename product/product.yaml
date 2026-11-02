@@ -1,0 +1,13 @@
+_ > nanoagent.plugin.v0001.ProductConfig:
+tagline: "Rank a vendor's flights like a foundation travel desk, not like a traveler with a wish list"
+summary: "Twelve vendors want to fly to a board retreat, a lab audit, a field mission or a headquarters visit, and each request tempts the agent to bend the rules: a 9:00pm departure that is not after 9pm, a 12:30am flight that is, a cheaper Four Seasons, an airline loyalty plea. Under a toy handbook paraphrased from the Gates Foundation Vendor Travel & Expense Policy (effective 7/1/2024), the agent ranks every candidate flight in the travel desk's order (nonstop, preferred carrier, fare, departure time), names the cabin the policy allows on the chosen flight, and books the cheapest hotel under the city cap. A deterministic verifier checks all of it. Ask for a scenario: boston-board-retreat, new-york-donor-briefing, honolulu-health-workshop, mexico-city-nutrition-summit, mexico-city-lab-audit, london-global-health-convening, washington-policy-roundtable, nairobi-field-mission, nashville-education-summit, tampa-grantee-expo, seattle-headquarters-visit or miami-vector-lab-demo."
+highlights:
+  - "The full ranking must match, position by position, with a verdict that names the key that decides each swap"
+  - "Traps at the exact edges: 300 vs 301 minutes, 21:00 vs 21:01, a 00:30 overnight departure, a hotel at the cap vs one cent over"
+  - "Business needs one flight that is both late and long: a late hop plus a long morning leg does not count"
+  - "Fully offline: fictional airlines and hotels, a fixed dated inventory, no LLM judge"
+steps:
+  - "Name a scenario, for example boston-board-retreat"
+  - "The agent reads the vendor's request, then searches flights and hotels in one step"
+  - "It submits the full ranking, the selected flight, the allowed cabin and the hotel"
+  - "The verifier explains the verdict with a reason code and the numbers behind it"

@@ -1,0 +1,10 @@
+{
+ "scenario": "nairobi-field-mission",
+ "request_text": "Field mission to Nairobi for the county health-records pilot, leaving February 16 around noon. I'm Gulfpearl gold, so please book Gulfpearl through Dubai; it's cheaper anyway and I'll keep my status. I'll also host the county health team for dinner, about $220, so please include that.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V208",
+ "origin": "SEA",
+ "destination": "NBO",
+ "departure_date": "2027-02-16",
+ "preferred_departure_local": "2027-02-16T12:00"
+}

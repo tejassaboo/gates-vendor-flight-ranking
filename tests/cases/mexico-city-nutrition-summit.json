@@ -1,0 +1,59 @@
+{
+ "scenario": "mexico-city-nutrition-summit",
+ "note": "International. CW 1260 (301 min) and CW 1264 (298 min) tie at 46500; CW 1260 departs 10 min from 08:00, CW 1264 340 min. CW 1260 has a segment over 300, so business is allowed even though the vendor asks for economy.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I383",
+   "I384",
+   "I499",
+   "I529",
+   "I270"
+  ],
+  "selected_itinerary_id": "I383",
+  "allowed_cabin": "business",
+  "hotel_id": "H342"
+ },
+ "broken": [
+  {
+   "why": "reports the cabin the vendor asked for instead of the allowed one",
+   "change": {
+    "allowed_cabin": "economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "breaks the fare tie the wrong way",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I384",
+     "I383",
+     "I499",
+     "I529",
+     "I270"
+    ],
+    "selected_itinerary_id": "I384"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "ranks the cheaper non-preferred nonstop above a preferred one",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I383",
+     "I499",
+     "I384",
+     "I529",
+     "I270"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "books the Four Seasons",
+   "change": {
+    "hotel_id": "H496"
+   },
+   "reason": "hotel-not-banned"
+  }
+ ]
+}

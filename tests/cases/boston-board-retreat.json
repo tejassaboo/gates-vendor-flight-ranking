@@ -1,0 +1,69 @@
+{
+ "scenario": "boston-board-retreat",
+ "note": "Three preferred nonstops: NS 902 21:00 (29900) is cheapest; CW 488 21:01 and CW 470 20:55 tie at 31200 and split on distance from 21:30 (29 vs 35 min). NS 902 leaves at 21:00 exactly, so no business despite 331 min: premium_economy. SJ 61 is the only non-preferred nonstop, then the two connections. The Four Seasons Boston (37900) is cheaper than the compliant Beacon Hill Lantern Inn (38600).",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I973",
+   "I467",
+   "I278",
+   "I283",
+   "I316",
+   "I595"
+  ],
+  "selected_itinerary_id": "I973",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H271"
+ },
+ "broken": [
+  {
+   "why": "treats the 21:00 departure as after 9pm",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "breaks the 31200 fare tie the wrong way (20:55 before 21:01)",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I973",
+     "I278",
+     "I467",
+     "I283",
+     "I316",
+     "I595"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "puts the cheaper non-preferred nonstop first",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I283",
+     "I973",
+     "I467",
+     "I278",
+     "I316",
+     "I595"
+    ],
+    "selected_itinerary_id": "I283"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "books the Four Seasons the vendor asked for",
+   "change": {
+    "hotel_id": "H316"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "skips the cheapest compliant hotel",
+   "change": {
+    "hotel_id": "H565"
+   },
+   "reason": "hotel-correct"
+  }
+ ]
+}

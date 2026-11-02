@@ -1,0 +1,10 @@
+{
+ "scenario": "miami-vector-lab-demo",
+ "request_text": "Demonstrating our mosquito-surveillance traps at the vector-control lab in Miami. I'd leave Portland on the evening of February 1 around 9pm, overnight in Seattle with family, and take the early flight to Miami. My trip starts after 9pm and includes a flight of over five hours, so business should apply.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V212",
+ "origin": "PDX",
+ "destination": "MIA",
+ "departure_date": "2027-02-01",
+ "preferred_departure_local": "2027-02-01T21:00"
+}

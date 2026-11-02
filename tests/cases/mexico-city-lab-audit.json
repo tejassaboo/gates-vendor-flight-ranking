@@ -1,0 +1,52 @@
+{
+ "scenario": "mexico-city-lab-audit",
+ "note": "International. The selected CW 1260 flies exactly 300 min, which is not more than 300, so economy (premium economy is expressly allowed only on domestic flights). CW 1264 (301 min) ranks second on fare.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I633",
+   "I923",
+   "I719",
+   "I512"
+  ],
+  "selected_itinerary_id": "I633",
+  "allowed_cabin": "economy",
+  "hotel_id": "H342"
+ },
+ "broken": [
+  {
+   "why": "gives business at exactly 300 minutes",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "allows premium economy internationally",
+   "change": {
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "picks the 301-minute flight to unlock business",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I923",
+     "I633",
+     "I719",
+     "I512"
+    ],
+    "selected_itinerary_id": "I923",
+    "allowed_cabin": "business"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "selects an itinerary that is not first in its own ranking",
+   "change": {
+    "selected_itinerary_id": "I719"
+   },
+   "reason": "selected-is-first"
+  }
+ ]
+}

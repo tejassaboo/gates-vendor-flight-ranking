@@ -1,0 +1,51 @@
+{
+ "scenario": "miami-vector-lab-demo",
+ "note": "All connections. CW 2210+CW 1906 (30400) is the cheapest preferred: first. Its 21:30 hop flies 55 min and its 345-min leg leaves at 06:05, so no single segment is both late and over 300: premium_economy. NS 1930 (23:30, 330 min) would allow business but ranks second.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I577",
+   "I671",
+   "I164",
+   "I235"
+  ],
+  "selected_itinerary_id": "I577",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H768"
+ },
+ "broken": [
+  {
+   "why": "combines the late first departure with the long second leg",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "ranks by fare alone",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I164",
+     "I235",
+     "I577",
+     "I671"
+    ],
+    "selected_itinerary_id": "I164"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "books the Four Seasons Miami",
+   "change": {
+    "hotel_id": "H846"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "submits an empty ranking",
+   "change": {
+    "ranked_itinerary_ids": []
+   },
+   "reason": "ranked-complete"
+  }
+ ]
+}

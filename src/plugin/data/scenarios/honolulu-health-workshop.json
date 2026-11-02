@@ -1,0 +1,10 @@
+{
+ "scenario": "honolulu-health-workshop",
+ "request_text": "Heading to Honolulu for the Pacific islands disease-surveillance workshop. I'd like the 8pm departure on January 14. It's six hours over open ocean, which is basically an international flight, so business please. For the hotel, the Ko Olina Four Seasons has a great rate, or any place under $300 a night all-in.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V203",
+ "origin": "SEA",
+ "destination": "HNL",
+ "departure_date": "2027-01-14",
+ "preferred_departure_local": "2027-01-14T20:00"
+}

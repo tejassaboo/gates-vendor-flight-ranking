@@ -1,0 +1,52 @@
+{
+ "scenario": "tampa-grantee-expo",
+ "note": "CW 1702 is the only preferred nonstop: first, premium_economy (09:05). PB 88 (23:30, 305 min) would allow business but is not preferred. Only the Tampa Marriott Water Street is banned; the Harbour Island Marriott is fine and cheapest.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I702",
+   "I806",
+   "I489",
+   "I836"
+  ],
+  "selected_itinerary_id": "I702",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H581"
+ },
+ "broken": [
+  {
+   "why": "bans every Marriott",
+   "change": {
+    "hotel_id": "H709"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "books the Water Street Marriott",
+   "change": {
+    "hotel_id": "H978"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "takes the cheaper late non-preferred nonstop",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I806",
+     "I702",
+     "I489",
+     "I836"
+    ],
+    "selected_itinerary_id": "I806",
+    "allowed_cabin": "business"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "gives business on a 09:05 departure",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  }
+ ]
+}

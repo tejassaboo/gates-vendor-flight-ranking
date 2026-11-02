@@ -1,0 +1,57 @@
+{
+ "scenario": "london-global-health-convening",
+ "note": "RG 48 is the only preferred nonstop: first, business (575 min). SJ 2 (nonstop, not preferred) ranks above both preferred-or-not connections under the four-key reading. London's cap is 47500: the Bloomsbury Quill at exactly 47500 is allowed and the Southbank Lantern at 47501 is not; the cheaper Four Seasons Park Lane is banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I426",
+   "I681",
+   "I393",
+   "I472"
+  ],
+  "selected_itinerary_id": "I426",
+  "allowed_cabin": "business",
+  "hotel_id": "H855"
+ },
+ "broken": [
+  {
+   "why": "uses the three-key reading (nonstop-and-preferred, then fare)",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I426",
+     "I472",
+     "I681",
+     "I393"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "books the hotel one cent over the London cap",
+   "change": {
+    "hotel_id": "H458"
+   },
+   "reason": "hotel-within-cap"
+  },
+  {
+   "why": "books the Four Seasons Park Lane",
+   "change": {
+    "hotel_id": "H339"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "books a hotel well over the cap",
+   "change": {
+    "hotel_id": "H299"
+   },
+   "reason": "hotel-within-cap"
+  },
+  {
+   "why": "books a hotel in another city",
+   "change": {
+    "hotel_id": "H271"
+   },
+   "reason": "hotel-in-destination"
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "scenario": "honolulu-health-workshop",
+ "note": "Honolulu is in the 50 states, so the trip is domestic. CW 845 (20:00, 360 min) is the cheapest preferred nonstop but departs before 21:01: premium_economy. NS 1500 (21:30) would allow business but ranks third on fare. Hotel: Kaimana Reef 27200 before tax (32800 with tax) is the cheapest compliant; taxes never count, so Manoa Garden (28400) is wrong.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I174",
+   "I184",
+   "I220",
+   "I116",
+   "I441"
+  ],
+  "selected_itinerary_id": "I174",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H893"
+ },
+ "broken": [
+  {
+   "why": "treats the 6-hour Hawaii flight as international",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "compares hotels with taxes included",
+   "change": {
+    "hotel_id": "H361"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "books the Ko Olina Four Seasons",
+   "change": {
+    "hotel_id": "H142"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "books a hotel over the 30000 default cap",
+   "change": {
+    "hotel_id": "H376"
+   },
+   "reason": "hotel-within-cap"
+  },
+  {
+   "why": "picks the business-eligible 21:30 flight first",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I220",
+     "I174",
+     "I184",
+     "I116",
+     "I441"
+    ],
+    "selected_itinerary_id": "I220"
+   },
+   "reason": "selected-correct"
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "scenario": "mexico-city-lab-audit",
+ "request_text": "Back to Mexico City on February 2 for the reference-lab quality audit, ideally leaving around 7:30am. I start the audit the afternoon I land and it's a five-hour flight, so I'd really like business class. The 1:40pm Cascade flight is over five hours if that helps.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V205",
+ "origin": "SEA",
+ "destination": "MEX",
+ "departure_date": "2027-02-02",
+ "preferred_departure_local": "2027-02-02T07:30"
+}

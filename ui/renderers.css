@@ -1,0 +1,74 @@
+.pass {
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.pass-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: var(--on-accent);
+}
+.pass-brand {
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+.pass-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 12px;
+  padding: 16px;
+}
+.pass-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.pass-label {
+  color: var(--muted);
+  font-size: .75em;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.pass-value {
+  font-size: 1.25em;
+  color: var(--text);
+}
+.pass-stub {
+  border-top: 2px dashed var(--border-strong);
+  padding: 12px 16px;
+  background: var(--surface-2);
+}
+.pass-rank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 6px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: rank;
+}
+.pass-rank li {
+  counter-increment: rank;
+  padding: 2px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--neutral-soft);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.pass-rank li::before {
+  content: counter(rank) ". ";
+  color: var(--muted);
+}
+.pass-rank li.first {
+  background: var(--accent-soft);
+  color: var(--accent-strong);
+  font-weight: 600;
+}

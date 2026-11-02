@@ -1,0 +1,10 @@
+{
+ "scenario": "nashville-education-summit",
+ "request_text": "Demoing our adaptive-math curriculum at the education summit in Nashville on January 21, ideally on an early flight around 7am. Connecting through Minneapolis on Northstar is cheaper and they're one of the foundation's preferred airlines, so I'm happy with that. The Dream Nashville has the best rate downtown.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V209",
+ "origin": "SEA",
+ "destination": "BNA",
+ "departure_date": "2027-01-21",
+ "preferred_departure_local": "2027-01-21T07:00"
+}

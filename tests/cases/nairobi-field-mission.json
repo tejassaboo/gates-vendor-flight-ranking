@@ -1,0 +1,56 @@
+{
+ "scenario": "nairobi-field-mission",
+ "note": "No nonstops. The preferred connections (RG via London 139500, TB via Amsterdam 142000) rank above the cheaper Gulfpearl ones whatever the vendor's loyalty status. Business: RG 48 flies 575 min.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I649",
+   "I707",
+   "I863",
+   "I848"
+  ],
+  "selected_itinerary_id": "I649",
+  "allowed_cabin": "business",
+  "hotel_id": "H341"
+ },
+ "broken": [
+  {
+   "why": "follows the vendor's frequent-flyer wish",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I863",
+     "I848",
+     "I649",
+     "I707"
+    ],
+    "selected_itinerary_id": "I863"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "orders the non-preferred pair by preference instead of fare",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I649",
+     "I707",
+     "I848",
+     "I863"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "allows only economy on a 9-hour flight",
+   "change": {
+    "allowed_cabin": "economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "takes a pricier hotel",
+   "change": {
+    "hotel_id": "H741"
+   },
+   "reason": "hotel-correct"
+  }
+ ]
+}

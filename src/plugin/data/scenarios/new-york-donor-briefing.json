@@ -1,0 +1,10 @@
+{
+ "scenario": "new-york-donor-briefing",
+ "request_text": "I'm presenting the evaluation findings at the donor briefing in Manhattan first thing on December 9, so I'll take a late flight on the 8th, ideally around 10pm. Economy is fine if business isn't allowed. I'll also be hosting a working dinner for two, about $190, so please make sure that's covered.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V202",
+ "origin": "SEA",
+ "destination": "JFK",
+ "departure_date": "2026-12-08",
+ "preferred_departure_local": "2026-12-08T22:00"
+}

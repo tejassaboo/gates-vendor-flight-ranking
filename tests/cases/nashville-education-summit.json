@@ -1,0 +1,57 @@
+{
+ "scenario": "nashville-education-summit",
+ "note": "SJ 1450 is the only nonstop: it ranks first although Sunjet is not preferred and the preferred connections are cheaper (nonstop is key 1). Under the three-key reading HL via Chicago (23900) would win instead. Domestic, 252 min: premium_economy. The Dream Nashville Hotel is banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I741",
+   "I721",
+   "I718",
+   "I290"
+  ],
+  "selected_itinerary_id": "I741",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H802"
+ },
+ "broken": [
+  {
+   "why": "uses the three-key reading",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I290",
+     "I721",
+     "I718",
+     "I741"
+    ],
+    "selected_itinerary_id": "I290"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "puts the preferred connection the vendor likes first",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I721",
+     "I718",
+     "I741",
+     "I290"
+    ],
+    "selected_itinerary_id": "I721"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "books the Dream Nashville",
+   "change": {
+    "hotel_id": "H449"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "forgets premium economy is allowed domestically",
+   "change": {
+    "allowed_cabin": "economy"
+   },
+   "reason": "cabin-correct"
+  }
+ ]
+}

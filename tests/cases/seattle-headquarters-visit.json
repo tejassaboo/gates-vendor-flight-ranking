@@ -1,0 +1,50 @@
+{
+ "scenario": "seattle-headquarters-visit",
+ "note": "HNL to SEA is domestic. CW 2 departs 00:30, which is before 05:00 and so in the late window, and flies 345 min: business. It is the cheapest preferred nonstop (34900). Seattle uses the 30000 default cap; the Four Seasons Seattle is banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I774",
+   "I188",
+   "I907",
+   "I308"
+  ],
+  "selected_itinerary_id": "I774",
+  "allowed_cabin": "business",
+  "hotel_id": "H815"
+ },
+ "broken": [
+  {
+   "why": "reads 00:30 as not after 9pm",
+   "change": {
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "books the Four Seasons Seattle",
+   "change": {
+    "hotel_id": "H369"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "ranks the non-preferred nonstop above a preferred one",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I774",
+     "I188",
+     "I308",
+     "I907"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "assumes Seattle has a higher cap",
+   "change": {
+    "hotel_id": "H968"
+   },
+   "reason": "hotel-within-cap"
+  }
+ ]
+}

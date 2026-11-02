@@ -1,0 +1,56 @@
+[
+ {
+  "code": "CW",
+  "name": "Cascade Airways",
+  "us_flag_carrier": true,
+  "codeshare_partners": []
+ },
+ {
+  "code": "GP",
+  "name": "Gulfpearl",
+  "us_flag_carrier": false,
+  "codeshare_partners": []
+ },
+ {
+  "code": "HL",
+  "name": "Heartland Air",
+  "us_flag_carrier": true,
+  "codeshare_partners": []
+ },
+ {
+  "code": "NS",
+  "name": "Northstar Air",
+  "us_flag_carrier": true,
+  "codeshare_partners": []
+ },
+ {
+  "code": "PB",
+  "name": "Pelican Bay Airlines",
+  "us_flag_carrier": true,
+  "codeshare_partners": []
+ },
+ {
+  "code": "RG",
+  "name": "Regent Airways",
+  "us_flag_carrier": false,
+  "codeshare_partners": []
+ },
+ {
+  "code": "SJ",
+  "name": "Sunjet",
+  "us_flag_carrier": true,
+  "codeshare_partners": []
+ },
+ {
+  "code": "SM",
+  "name": "Sierra Madre Air",
+  "us_flag_carrier": false,
+  "codeshare_partners": []
+ },
+ {
+  "code": "TB",
+  "name": "Tulip Blue",
+  "us_flag_carrier": false,
+  "codeshare_partners": []
+ }
+]

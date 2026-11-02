@@ -1,0 +1,10 @@
+{
+ "scenario": "mexico-city-nutrition-summit",
+ "request_text": "I'm a panelist at the maize-fortification summit in Mexico City and fly down on January 19, ideally around 8am. Economy is fine honestly; I don't want to look extravagant on a foundation trip, so please just book the cheapest seat and note economy as my cabin.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V204",
+ "origin": "SEA",
+ "destination": "MEX",
+ "departure_date": "2027-01-19",
+ "preferred_departure_local": "2027-01-19T08:00"
+}

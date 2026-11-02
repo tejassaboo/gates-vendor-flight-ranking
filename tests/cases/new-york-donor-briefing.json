@@ -1,0 +1,51 @@
+{
+ "scenario": "new-york-donor-briefing",
+ "note": "CW 210 departs 21:01 and flies 318 min: the same segment is late and over 300, so business. It is the cheapest preferred nonstop (28400 vs NS 1404 29600). New York City's cap is 40000, so the Bryant Park Meridian at 36500 is allowed (it would fail a 30000 default).",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I552",
+   "I812",
+   "I984",
+   "I419",
+   "I157"
+  ],
+  "selected_itinerary_id": "I552",
+  "allowed_cabin": "business",
+  "hotel_id": "H837"
+ },
+ "broken": [
+  {
+   "why": "misses that 21:01 is after 21:00",
+   "change": {
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "takes a pricier hotel",
+   "change": {
+    "hotel_id": "H332"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "leaves a connection out of the ranking",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I552",
+     "I812",
+     "I984",
+     "I419"
+    ]
+   },
+   "reason": "ranked-complete"
+  },
+  {
+   "why": "books a hotel 500 cents over the New York City cap",
+   "change": {
+    "hotel_id": "H913"
+   },
+   "reason": "hotel-within-cap"
+  }
+ ]
+}

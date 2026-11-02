@@ -1,0 +1,10 @@
+{
+ "scenario": "seattle-headquarters-visit",
+ "request_text": "Coming to the foundation's Seattle headquarters for the data-sharing workshop. I'd take the overnight flight just after midnight, the early hours of January 28. A 12:30 a.m. departure is technically a morning flight, not an after-9pm one, so I assume premium economy is my limit. Any hotel near South Lake Union is fine.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V211",
+ "origin": "HNL",
+ "destination": "SEA",
+ "departure_date": "2027-01-28",
+ "preferred_departure_local": "2027-01-28T00:15"
+}
