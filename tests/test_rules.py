@@ -7,6 +7,7 @@ from plugin.rules import (
     allowed_cabin,
     banned_reason,
     compliant_hotels,
+    departure_gap,
     is_domestic,
     is_late,
     local_minutes,
@@ -95,6 +96,23 @@ def test_international_legs_never_combine_and_departure_time_does_not_matter() -
     assert cabin_of([("CW 1", "SEA", "BOS", "2026-12-07T08:00", 290), ("CW 2", "BOS", "LHR", "2026-12-07T17:00", 290)], destination="LHR") == "economy"
 
 
+def test_on_an_international_trip_a_long_domestic_leg_counts_too() -> None:
+    # G1 classifies the trip by its ends and G4 then looks at every segment: a 310-min SEA-BOS leg at 08:00
+    # inside a SEA-LHR trip allows business although, on a domestic trip, it would not.
+    legs = [("CW 1", "SEA", "BOS", "2026-12-07T08:00", 310), ("CW 2", "BOS", "LHR", "2026-12-07T17:00", 290)]
+    assert cabin_of(legs, destination="LHR") == "business"
+    assert cabin_of([("CW 1", "SEA", "BOS", "2026-12-07T08:00", 310)], destination="BOS") == "premium_economy"
+
+
+def test_the_allowed_cabin_ignores_which_fares_are_sold() -> None:
+    # allowed_cabin is the policy's ceiling (G4), whatever fares the itinerary offers.
+    world = world_of(("X1", [("CW 1", "SEA", "BOS", "2026-12-07T21:01", 301)], 30000))
+    world["itineraries"]["X1"]["fares_cents"].update({"premium_economy": None, "business": None})
+    assert allowed_cabin(world, trip(), world["itineraries"]["X1"]) == "business"
+    world["itineraries"]["X1"]["fares_cents"]["business"] = 90000
+    assert allowed_cabin(world, trip(), world["itineraries"]["X1"]) == "business"
+
+
 def test_cross_policy_sanity_row_gates() -> None:
     # Brief section 11: leg 1 = 360 in air, layover 90, leg 2 = 420 in air (elapsed 870): Gates gives business.
     world = world_of(("X1", [("CW 1", "SEA", "BOS", "2026-12-07T06:00", 360), ("CW 2", "BOS", "LHR", "2026-12-07T16:30", 420)], 100000))
@@ -144,6 +162,15 @@ def test_key_4_compares_full_date_and_time_across_midnight() -> None:
     after_midnight = ("X1", [("CW 1", "SEA", "BOS", "2026-12-07T00:30", 300)], 30000)
     late_evening = ("X2", [("CW 2", "SEA", "BOS", "2026-12-07T23:55", 300)], 30000)
     assert ranked(after_midnight, late_evening, preferred="2026-12-07T00:15") == ["X1", "X2"]  # 15 vs 1420 minutes
+
+
+def test_key_4_distance_is_not_a_clock_distance() -> None:
+    # 23:50 on the departure date is 1420 minutes from a preferred 00:10 that morning, not 20: the preferred
+    # departure has a date (G6 key 4), and every candidate leaves on that date.
+    world = world_of(("X1", [("CW 1", "SEA", "BOS", "2026-12-07T23:50", 300)], 30000), ("X2", [("CW 2", "SEA", "BOS", "2026-12-07T00:30", 300)], 30000))
+    wanted = trip(preferred="2026-12-07T00:10")
+    assert departure_gap(world, wanted, world["itineraries"]["X1"]) == 1420
+    assert departure_gap(world, wanted, world["itineraries"]["X2"]) == 20
 
 
 def test_no_candidate_is_an_error_not_a_guess() -> None:

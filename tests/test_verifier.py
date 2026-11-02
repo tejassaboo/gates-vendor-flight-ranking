@@ -152,6 +152,41 @@ def test_the_verifier_never_raises(arguments_value, output_value) -> None:
     assert result["valid"] is False and result["message"].startswith("verifier-error")
 
 
+def test_an_unknown_task_or_tool_id_is_a_failed_verdict_not_an_exception() -> None:
+    gold = build_output(BOSTON, GatesBookingOutput)
+    for result in (
+        verifier.verify_task("book-trip", arguments("boston-board-retreat"), gold, None, "."),
+        verifier.verify_task(None, arguments("boston-board-retreat"), gold, None, "."),
+        verifier.verify_input("search_flights", None),
+        verifier.verify_output("search_flights", None, None, "."),
+    ):
+        assert result["valid"] is False and result["message"].startswith("verifier-error"), result
+
+
+def test_an_unknown_scenario_or_garbage_reference_is_a_failed_verdict() -> None:
+    gold = build_output(BOSTON, GatesBookingOutput)
+    unknown = verifier.verify_task(TASK, {"scenario": "atlantis-summit"}, gold, None, ".")
+    assert unknown["valid"] is False and unknown["message"].startswith("verifier-error")
+    garbage = verifier.verify_task(TASK, arguments("boston-board-retreat"), gold, "not a booking", ".")
+    assert garbage["valid"] is False and garbage["message"].startswith("reference-matches-oracle")
+
+
+@pytest.mark.parametrize(
+    ("change", "reason"),
+    [
+        # The selected id exists and is ranked nowhere: another trip's itinerary heads nothing.
+        ({"selected_itinerary_id": "I115"}, "selected-is-first"),
+        # A candidate is replaced by another trip's itinerary of the same inventory.
+        ({"ranked_itinerary_ids": ["I973", "I467", "I278", "I283", "I316", "I115"]}, "ranked-ids-serve-trip"),
+        # The right set in reverse: the full order must match, not just the head.
+        ({"ranked_itinerary_ids": ["I973", "I595", "I316", "I283", "I278", "I467"]}, "ranking-correct"),
+    ],
+)
+def test_ids_from_other_trips_and_reordered_tails_are_caught(change: dict, reason: str) -> None:
+    result = verdict("boston-board-retreat", {**BOSTON, **change})
+    assert result["valid"] is False and result["message"].split(":")[0] == reason, result["message"]
+
+
 @pytest.mark.parametrize("scenario", SCENARIOS)
 def test_verdicts_are_deterministic_plain_json(scenario: str) -> None:
     broken = {**case(scenario)["expected"], **case(scenario)["broken"][0]["change"]}

@@ -3,6 +3,7 @@
 from contract import Task, Tool
 
 from . import booking, hotels, search, trip_request
+from .checks import result
 
 TOOLS = {
     Tool.GET_TRIP_REQUEST: trip_request,
@@ -15,12 +16,24 @@ TASKS = {Task.RANK_GATES_VENDOR_TRIP: booking.verify_task}
 
 
 def verify_input(tool, value):
-    return TOOLS[Tool(tool)].verify_input(value)
+    try:
+        module = TOOLS[Tool(tool)]
+    except ValueError as error:  # an unknown tool id: a failed verdict, never an exception
+        return result(False, f"verifier-error: {error}")
+    return module.verify_input(value)
 
 
 def verify_output(tool, input_value, output_value, workspace):
-    return TOOLS[Tool(tool)].verify_output(input_value, output_value, workspace)
+    try:
+        module = TOOLS[Tool(tool)]
+    except ValueError as error:
+        return result(False, f"verifier-error: {error}")
+    return module.verify_output(input_value, output_value, workspace)
 
 
 def verify_task(task, arguments, output, reference, workspace):
-    return TASKS[Task(task)](arguments, output, reference, workspace)
+    try:
+        check = TASKS[Task(task)]
+    except ValueError as error:
+        return result(False, f"verifier-error: {error}")
+    return check(arguments, output, reference, workspace)

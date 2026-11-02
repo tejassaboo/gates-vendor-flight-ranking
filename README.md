@@ -125,7 +125,8 @@ How it scores and reports:
 - `details.constraints` lists every check with `id`, `ok`, `expected`, `actual` and `message`, as plain JSON.
 - Shape errors never reach the verifier, because NanoAgent's `build_output` refuses them first. These
   include a wrong type, an unknown Enum value such as `first`, a missing or extra field, and `null`.
-- The verifier is pure stdlib and never raises. An unexpected value becomes a `verifier-error` verdict.
+- The verifier is pure stdlib and never raises. An unexpected value, an unknown scenario, and an unknown
+  task or tool id each become a `verifier-error` verdict.
 - Every tool output is also checked against the fixtures (`verify_output`).
 
 ## Validation
@@ -141,6 +142,8 @@ How it scores and reports:
 - oracle == the hand-written `tests/cases/<scenario>.json`;
 - independence from `request_text`;
 - the `rules.py` and `world.py` identity checks, and handbook == `instructions`;
+- the verifier returns a failed verdict, and never raises, for an unknown task or tool id, an unknown
+  scenario and a garbage reference;
 - fixture integrity, recomputing times with `zoneinfo`, and no trip date on a daylight-saving change;
 - generator reproducibility;
 - tool-output size, kept under about 1k tokens;
@@ -160,7 +163,10 @@ How it scores and reports:
 - **The late departure and the long duration must be on the same flight.** The policy does not say so,
   and this is our reading.
 - **Other gaps the policy leaves open:**
-  - "domestic" is read as both ends in the 50 states plus D.C.;
+  - "domestic" is read as both ends in the 50 states plus D.C., so on an international trip every
+    segment over 300 minutes allows business, even a domestic positioning leg (no scenario turns on this);
+  - `allowed_cabin` is the policy's ceiling, whatever fares the itinerary sells (every bundled itinerary
+    sells economy, premium economy and business);
   - premium economy on international flights of five hours or less is read as not allowed (the policy
     allows it only domestically, and "not expressly covered" is not reimbursable).
 - **Seattle uses the USD 300 default.** The revision history mentions a Seattle lodging update, but no
