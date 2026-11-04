@@ -1,5 +1,7 @@
 # Gates Vendor Flight Ranking
 
+**No affiliation with the Gates Foundation.**
+
 A `nanoagent.plugin/v0001` plugin. An agent plays the foundation travel desk for one vendor trip, under a
 toy handbook paraphrased from the Gates Foundation Vendor Travel & Expense Policy (effective 7/1/2024).
 It ranks every candidate flight in the travel desk's priority order, states the highest cabin the policy
