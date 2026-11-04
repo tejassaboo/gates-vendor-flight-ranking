@@ -6,9 +6,12 @@ from .world import IATA, day_number
 def verify_input(value):
     try:
         given = plain(value)
+        airports = load_gates_world(DATA)["airports"]
         for code in (given["origin"], given["destination"]):
             if not IATA.fullmatch(code):
                 return result(False, f"{code!r} is not a three-letter IATA code")
+            if code not in airports:
+                return result(False, f"{code!r} is not an airport in this inventory")
         if given["origin"] == given["destination"]:
             return result(False, "origin and destination must differ")
         day_number(given["date"])

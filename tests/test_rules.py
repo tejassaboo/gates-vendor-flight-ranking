@@ -1,5 +1,5 @@
 """The oracle's rules at every threshold, exactly at the limit and one unit past it, plus each ranking key,
-the hotel rules and the brief's section 11 cross-policy row for Gates, on small synthetic worlds."""
+the hotel rules and the cross-policy sanity row shared with the sibling plugins, on small synthetic worlds."""
 
 import pytest
 
@@ -68,7 +68,7 @@ def test_after_nine_pm_window(clock: str, late: bool) -> None:
         ("21:01", 301, "business"),
         ("21:01", 300, "premium_economy"),  # exactly five hours does not exceed five
         ("21:00", 301, "premium_economy"),  # exactly 9:00pm is not after 9:00pm
-        ("20:00", 360, "premium_economy"),  # the brief's 6h domestic 20:00 flight: not business
+        ("20:00", 360, "premium_economy"),  # a 6 h domestic flight leaving 20:00: long but not late
         ("00:30", 345, "business"),  # an overnight departure counts as after 9:00pm
         ("04:59", 301, "business"),
         ("05:00", 301, "premium_economy"),
@@ -85,6 +85,12 @@ def test_late_and_long_must_be_the_same_segment() -> None:
     # An early short hop then a late long leg: the second flight qualifies by itself.
     hop_then_late = [("CW 1", "SEA", "HNL", "2026-12-07T08:00", 50), ("CW 2", "HNL", "BOS", "2026-12-07T23:30", 330)]
     assert cabin_of(hop_then_late) == "business"
+    # The qualifying flight may be a later segment that leaves after midnight, on the next calendar date.
+    hop_then_overnight = [("CW 1", "SEA", "HNL", "2026-12-07T19:00", 50), ("CW 2", "HNL", "BOS", "2026-12-08T00:30", 320)]
+    assert cabin_of(hop_then_overnight) == "business"
+    # A late short hop then a long leg at exactly 05:00 the next morning: neither qualifies.
+    hop_then_dawn = [("CW 1", "SEA", "HNL", "2026-12-07T22:00", 50), ("CW 2", "HNL", "BOS", "2026-12-08T05:00", 320)]
+    assert cabin_of(hop_then_dawn) == "premium_economy"
 
 
 @pytest.mark.parametrize(("minutes", "cabin"), [(300, "economy"), (301, "business")])
@@ -114,7 +120,7 @@ def test_the_allowed_cabin_ignores_which_fares_are_sold() -> None:
 
 
 def test_cross_policy_sanity_row_gates() -> None:
-    # Brief section 11: leg 1 = 360 in air, layover 90, leg 2 = 420 in air (elapsed 870): Gates gives business.
+    # The cross-policy sanity row: leg 1 = 360 in air, layover 90, leg 2 = 420 in air (elapsed 870): Gates gives business.
     world = world_of(("X1", [("CW 1", "SEA", "BOS", "2026-12-07T06:00", 360), ("CW 2", "BOS", "LHR", "2026-12-07T16:30", 420)], 100000))
     record = world["itineraries"]["X1"]
     assert (record["layover_minutes"], record["total_elapsed_minutes"], record["longest_segment_minutes"]) == ([90], 870, 420)

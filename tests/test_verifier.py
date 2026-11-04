@@ -1,5 +1,5 @@
-"""The verifier against hand-written submissions (no agent): the brief's section 7 matrix. Correct,
-incorrect, missing, consistency and verifier-caught malformed cases run through verify_task; shape
+"""The verifier against hand-written submissions (no agent). Correct, incorrect, missing, consistency
+and verifier-caught malformed cases run through verify_task; shape
 problems are refused by build_output before any verifier runs, exactly as in NanoAgent."""
 
 import json
@@ -202,6 +202,7 @@ def test_verdicts_are_deterministic_plain_json(scenario: str) -> None:
         ({"origin": "SEA", "destination": "BOS", "date": "2026-12-07"}, True),
         ({"origin": "SEA", "destination": "SEA", "date": "2026-12-07"}, False),
         ({"origin": "sea", "destination": "BOS", "date": "2026-12-07"}, False),
+        ({"origin": "ZZZ", "destination": "BOS", "date": "2026-12-07"}, False),  # well-formed, not in the inventory
         ({"origin": "SEA", "destination": "BOS", "date": "2026-02-30"}, False),
     ],
 )

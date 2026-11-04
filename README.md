@@ -49,8 +49,8 @@ Each scenario sets a trap:
 | `miami-vector-lab-demo` | A 21:30 hop of 55 min, then a 345-min leg at 06:05: no single flight is both late and long. | I577, I671, I164, I235 | premium_economy | H768 |
 
 `seattle-headquarters-visit`, `mexico-city-nutrition-summit` and `miami-vector-lab-demo` are the subtle
-traps. An over-literal clock reading, an over-cautious echo of the vendor's own cabin request, and the
-brief's first-segment reading each get them wrong.
+traps. An over-literal clock reading, an over-cautious echo of the vendor's own cabin request, and a
+reading that tests only the first segment's departure each get them wrong.
 
 ## Tools
 
@@ -133,7 +133,7 @@ How it scores and reports:
 
 ## Validation
 
-`tests/` covers the brief's whole test matrix:
+`tests/` covers this matrix:
 
 - correct, incorrect, missing and malformed outputs, with malformed cases as `build_output` rejections;
 - every boundary: 300/301 minutes; 21:00/21:01, 00:30, 04:59/05:00; the same-segment rule; each ranking
@@ -149,7 +149,8 @@ How it scores and reports:
 - fixture integrity, recomputing times with `zoneinfo`, and no trip date on a daylight-saving change;
 - generator reproducibility;
 - tool-output size, kept under about 1k tokens;
-- the brief's §11 cross-policy row for Gates (360 + 90 + 420 gives business);
+- a cross-policy sanity row shared with the sibling travel-policy plugins (a 360-minute leg, a 90-minute
+  layover and a 420-minute leg on an international trip give business);
 - a real MCP server round trip;
 - a scripted, no-LLM agent written from the handbook alone, which reaches every gold answer within the
   step budget, while each broken variant fails with its reason code.

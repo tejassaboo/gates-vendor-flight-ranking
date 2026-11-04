@@ -10,7 +10,7 @@ import json
 import re
 from pathlib import Path
 
-from .world import day_number, itinerary_segments, load_world, search
+from .world import day_number, itinerary_segments, itinerary_view, load_world, search
 
 # The foundation's preferred carriers in this toy world (fictional airlines; handbook G6).
 PREFERRED_CARRIERS = ("CW", "NS", "RG", "TB")
@@ -122,17 +122,6 @@ def search_view(world, origin, destination, date):
     }
 
 
-def itinerary_view(world, itinerary):
-    segments = itinerary_segments(world, itinerary)
-    keys = ("flight", "marketing_carrier", "operating_carrier", "origin", "destination", "depart_local", "arrive_local", "in_air_minutes")
-    return {
-        "itinerary_id": itinerary["itinerary_id"],
-        "segments": [{key: segment[key] for key in keys} for segment in segments],
-        "arrive_utc": segments[-1]["arrive_utc"],
-        "fares_cents": dict(itinerary["fares_cents"]),
-    }
-
-
 def hotels_view(world, city):
     """What get_hotels shows: every hotel in the city, by hotel_id."""
     return {"city": city, "hotels": [dict(world["hotels"][key]) for key in sorted(world["hotels"]) if world["hotels"][key]["city"] == city]}
@@ -156,7 +145,7 @@ def first_departure(world, itinerary):
     return itinerary_segments(world, itinerary)[0]["depart_local"]
 
 
-def is_nonstop(world, itinerary):
+def is_nonstop(itinerary):
     return len(itinerary["segment_ids"]) == 1
 
 
@@ -173,7 +162,7 @@ def departure_gap(world, scenario, itinerary):
 def rank_key(world, scenario, itinerary):
     """The lexicographic ranking key (G6): nonstop, preferred carrier, economy fare, departure-time distance, id."""
     return (
-        0 if is_nonstop(world, itinerary) else 1,
+        0 if is_nonstop(itinerary) else 1,
         0 if is_preferred(world, itinerary) else 1,
         itinerary["fares_cents"]["economy"],
         departure_gap(world, scenario, itinerary),
