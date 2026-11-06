@@ -1,17 +1,19 @@
 {
  "scenario": "honolulu-health-workshop",
- "note": "Honolulu is in the 50 states, so the trip is domestic. CW 845 (20:00, 360 min) is the cheapest preferred nonstop but departs before 21:01: premium_economy. NS 1500 (21:30) would allow business but ranks third on fare. Hotel: Kaimana Reef 27200 before tax (32800 with tax) is the cheapest compliant; taxes never count, so Manoa Garden (28400) is wrong.",
+ "note": "Honolulu is in the 50 states, so the trip is domestic. CW 845 (20:00, 360 min) is the cheapest preferred nonstop but departs before 21:01: premium_economy. NS 1500 (21:30) would allow business but ranks fourth on fare; PB 700 (22:15, 357 min) is cheaper than every preferred nonstop but not preferred. Hotel: Kaimana Reef 27200 before tax (32800 with tax) is the cheapest compliant; taxes never count, so Manoa Garden (28400) is wrong. Diamond Head Terrace at 30001 is one cent over the 30000 default.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I174",
-   "I184",
-   "I220",
-   "I116",
-   "I441"
+   "I441",
+   "I270",
+   "I383",
+   "I384",
+   "I633",
+   "I499",
+   "I529"
   ],
-  "selected_itinerary_id": "I174",
+  "selected_itinerary_id": "I441",
   "allowed_cabin": "premium_economy",
-  "hotel_id": "H893"
+  "hotel_id": "H350"
  },
  "broken": [
   {
@@ -24,21 +26,21 @@
   {
    "why": "compares hotels with taxes included",
    "change": {
-    "hotel_id": "H361"
+    "hotel_id": "H378"
    },
    "reason": "hotel-correct"
   },
   {
    "why": "books the Ko Olina Four Seasons",
    "change": {
-    "hotel_id": "H142"
+    "hotel_id": "H973"
    },
    "reason": "hotel-not-banned"
   },
   {
-   "why": "books a hotel over the 30000 default cap",
+   "why": "books the hotel one cent over the 30000 default cap",
    "change": {
-    "hotel_id": "H376"
+    "hotel_id": "H585"
    },
    "reason": "hotel-within-cap"
   },
@@ -46,13 +48,15 @@
    "why": "picks the business-eligible 21:30 flight first",
    "change": {
     "ranked_itinerary_ids": [
-     "I220",
-     "I174",
-     "I184",
-     "I116",
-     "I441"
+     "I384",
+     "I441",
+     "I270",
+     "I383",
+     "I633",
+     "I499",
+     "I529"
     ],
-    "selected_itinerary_id": "I220"
+    "selected_itinerary_id": "I384"
    },
    "reason": "selected-correct"
   }

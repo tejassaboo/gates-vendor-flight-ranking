@@ -1,0 +1,72 @@
+{
+ "scenario": "toronto-immunization-forum",
+ "note": "HNL to YYZ is international (Canada) and has no nonstop. The preferred connections rank by fare: NS 70+NS 440 (61200) first, then CW 60+CW 980 (63400), CW 90+CW 1560 (64100), NS 20+NS 1340 (65900); the non-preferred PB, SJ and HL connections follow by fare although all are cheaper. On the selected itinerary the HNL-LAX leg flies 320 min: on an international trip every segment counts, so business although the LAX-YYZ leg is only 270. Toronto uses the 30000 default: Distillery Lane Inn at exactly 30000 is allowed, Queen West Loft Hotel at 30001 is not; the cheaper Four Seasons is banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I692",
+   "I369",
+   "I815",
+   "I975",
+   "I846",
+   "I768",
+   "I255"
+  ],
+  "selected_itinerary_id": "I692",
+  "allowed_cabin": "business",
+  "hotel_id": "H606"
+ },
+ "broken": [
+  {
+   "why": "looks only at the international segment (270 min)",
+   "change": {
+    "allowed_cabin": "economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "books the hotel one cent over the default cap",
+   "change": {
+    "hotel_id": "H927"
+   },
+   "reason": "hotel-within-cap"
+  },
+  {
+   "why": "ranks the cheapest connection first although it is not preferred",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I846",
+     "I768",
+     "I255",
+     "I692",
+     "I369",
+     "I815",
+     "I975"
+    ],
+    "selected_itinerary_id": "I846"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "orders the preferred connections by departure time",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I692",
+     "I369",
+     "I975",
+     "I815",
+     "I846",
+     "I768",
+     "I255"
+    ]
+   },
+   "reason": "ranking-correct"
+  },
+  {
+   "why": "books the banned Four Seasons Toronto",
+   "change": {
+    "hotel_id": "H376"
+   },
+   "reason": "hotel-not-banned"
+  }
+ ]
+}

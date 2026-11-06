@@ -1,0 +1,10 @@
+{
+ "scenario": "denver-sanitation-forum",
+ "request_text": "Speaking at the sanitation-financing forum in Denver on February 26. I'd fly out of Miami the evening of the 25th, around 9pm. The 9:05pm Cascade flight is a five-hour red-eye, so business please, and Pelican Bay's 10:15pm is even cheaper if you'd rather. I'll stay anywhere near Union Station.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V215",
+ "origin": "MIA",
+ "destination": "DEN",
+ "departure_date": "2027-02-25",
+ "preferred_departure_local": "2027-02-25T21:00"
+}

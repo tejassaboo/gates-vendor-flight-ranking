@@ -136,11 +136,27 @@
   "timezone": "America/Los_Angeles"
  },
  {
+  "code": "SFO",
+  "city": "San Francisco",
+  "country": "US",
+  "continental_us": true,
+  "us_50_states_dc": true,
+  "timezone": "America/Los_Angeles"
+ },
+ {
   "code": "TPA",
   "city": "Tampa",
   "country": "US",
   "continental_us": true,
   "us_50_states_dc": true,
   "timezone": "America/New_York"
+ },
+ {
+  "code": "YYZ",
+  "city": "Toronto",
+  "country": "CA",
+  "continental_us": false,
+  "us_50_states_dc": false,
+  "timezone": "America/Toronto"
  }
 ]

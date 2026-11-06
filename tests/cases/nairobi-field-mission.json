@@ -1,39 +1,45 @@
 {
  "scenario": "nairobi-field-mission",
- "note": "No nonstops. The preferred connections (RG via London 139500, TB via Amsterdam 142000) rank above the cheaper Gulfpearl ones whatever the vendor's loyalty status. Business: RG 48 flies 575 min.",
+ "note": "No nonstops. The preferred connections (RG via London 139500, TB via Amsterdam 142000, NS+RG via New York 144900) rank above the cheaper Gulfpearl ones whatever the vendor's loyalty status; the non-preferred ones go by fare (116900, 118500, 121000). Business: RG 48 flies 575 min.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I649",
-   "I707",
-   "I863",
-   "I848"
+   "I671",
+   "I308",
+   "I235",
+   "I995",
+   "I577",
+   "I164"
   ],
-  "selected_itinerary_id": "I649",
+  "selected_itinerary_id": "I671",
   "allowed_cabin": "business",
-  "hotel_id": "H341"
+  "hotel_id": "H702"
  },
  "broken": [
   {
    "why": "follows the vendor's frequent-flyer wish",
    "change": {
     "ranked_itinerary_ids": [
-     "I863",
-     "I848",
-     "I649",
-     "I707"
+     "I995",
+     "I577",
+     "I164",
+     "I671",
+     "I308",
+     "I235"
     ],
-    "selected_itinerary_id": "I863"
+    "selected_itinerary_id": "I995"
    },
    "reason": "selected-correct"
   },
   {
-   "why": "orders the non-preferred pair by preference instead of fare",
+   "why": "orders the non-preferred group by departure time instead of fare",
    "change": {
     "ranked_itinerary_ids": [
-     "I649",
-     "I707",
-     "I848",
-     "I863"
+     "I671",
+     "I308",
+     "I235",
+     "I164",
+     "I995",
+     "I577"
     ]
    },
    "reason": "ranking-correct"
@@ -48,7 +54,7 @@
   {
    "why": "takes a pricier hotel",
    "change": {
-    "hotel_id": "H741"
+    "hotel_id": "H808"
    },
    "reason": "hotel-correct"
   }

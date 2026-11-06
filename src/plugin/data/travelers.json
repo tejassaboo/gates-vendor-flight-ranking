@@ -70,5 +70,23 @@
   "name": "Ines Carvalho",
   "department": "Stillwater Vector Labs",
   "base_point": "Portland, OR"
+ },
+ {
+  "traveler_id": "V213",
+  "name": "Noor Haddad",
+  "department": "Lighthouse Documentary Collective",
+  "base_point": "Brooklyn, NY"
+ },
+ {
+  "traveler_id": "V214",
+  "name": "Leilani Akana",
+  "department": "Makai Cold-Chain Logistics",
+  "base_point": "Honolulu, HI"
+ },
+ {
+  "traveler_id": "V215",
+  "name": "Felix Oyelaran",
+  "department": "Clearwater Sanitation Engineering",
+  "base_point": "Miami, FL"
  }
 ]

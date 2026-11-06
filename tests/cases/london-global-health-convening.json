@@ -1,26 +1,30 @@
 {
  "scenario": "london-global-health-convening",
- "note": "RG 48 is the only preferred nonstop: first, business (575 min). SJ 2 (nonstop, not preferred) ranks above both preferred-or-not connections under the four-key reading. London's cap is 47500: the Bloomsbury Quill at exactly 47500 is allowed and the Southbank Lantern at 47501 is not; the cheaper Four Seasons Park Lane is banned.",
+ "note": "RG 48 (98400) and NS 100 (101500) are the preferred nonstops: RG 48 first, business (575 min). SJ 2 (nonstop, not preferred) ranks above every connection under the four-key reading; the CW+RG connection via JFK is preferred on both segments and cheaper (88700) than the TB one (91000). London's cap is 47500: the Bloomsbury Quill at exactly 47500 is allowed and the Southbank Lantern at 47501 is not; both Four Seasons are cheaper but banned.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I426",
-   "I681",
-   "I393",
-   "I472"
+   "I649",
+   "I718",
+   "I848",
+   "I290",
+   "I741",
+   "I721"
   ],
-  "selected_itinerary_id": "I426",
+  "selected_itinerary_id": "I649",
   "allowed_cabin": "business",
-  "hotel_id": "H855"
+  "hotel_id": "H712"
  },
  "broken": [
   {
    "why": "uses the three-key reading (nonstop-and-preferred, then fare)",
    "change": {
     "ranked_itinerary_ids": [
-     "I426",
-     "I472",
-     "I681",
-     "I393"
+     "I649",
+     "I718",
+     "I290",
+     "I741",
+     "I721",
+     "I848"
     ]
    },
    "reason": "ranking-correct"
@@ -28,28 +32,28 @@
   {
    "why": "books the hotel one cent over the London cap",
    "change": {
-    "hotel_id": "H458"
+    "hotel_id": "H451"
    },
    "reason": "hotel-within-cap"
   },
   {
    "why": "books the Four Seasons Park Lane",
    "change": {
-    "hotel_id": "H339"
+    "hotel_id": "H240"
    },
    "reason": "hotel-not-banned"
   },
   {
    "why": "books a hotel well over the cap",
    "change": {
-    "hotel_id": "H299"
+    "hotel_id": "H797"
    },
    "reason": "hotel-within-cap"
   },
   {
    "why": "books a hotel in another city",
    "change": {
-    "hotel_id": "H271"
+    "hotel_id": "H491"
    },
    "reason": "hotel-in-destination"
   }

@@ -1,0 +1,67 @@
+{
+ "scenario": "los-angeles-media-screening",
+ "note": "JFK to LAX, domestic. CW 71 is the cheapest preferred nonstop (31800) and departs 04:59, which is earlier than 05:00 and so in the late window; 335 min > 300: business. Its twin NS 77 departs 05:00 (32400) and ranks second; if it were selected, 05:00 would not qualify. SJ 401 and PB 505 (21:30, 352 min) are cheaper but not preferred. Hotels: Westwood Palm Court and Echo Park Arbor Inn tie at 27400, so the lower hotel_id (H394) wins; the Beverly Wilshire and the Four Seasons Beverly Hills are banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I962",
+   "I870",
+   "I449",
+   "I802",
+   "I899",
+   "I246",
+   "I581",
+   "I709"
+  ],
+  "selected_itinerary_id": "I962",
+  "allowed_cabin": "business",
+  "hotel_id": "H394"
+ },
+ "broken": [
+  {
+   "why": "reads 04:59 as a morning departure",
+   "change": {
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "breaks the 27400 hotel tie the wrong way",
+   "change": {
+    "hotel_id": "H781"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "books the Beverly Wilshire",
+   "change": {
+    "hotel_id": "H801"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "names a hotel that does not exist",
+   "change": {
+    "hotel_id": "H000"
+   },
+   "reason": "hotel-exists"
+  },
+  {
+   "why": "puts the 05:00 twin first",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I870",
+     "I962",
+     "I449",
+     "I802",
+     "I899",
+     "I246",
+     "I581",
+     "I709"
+    ],
+    "selected_itinerary_id": "I870",
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "selected-correct"
+  }
+ ]
+}

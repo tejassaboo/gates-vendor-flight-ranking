@@ -33,6 +33,9 @@ class GatesScenario(Enum):
     TAMPA_GRANTEE_EXPO = "tampa-grantee-expo"
     SEATTLE_HEADQUARTERS_VISIT = "seattle-headquarters-visit"
     MIAMI_VECTOR_LAB_DEMO = "miami-vector-lab-demo"
+    LOS_ANGELES_MEDIA_SCREENING = "los-angeles-media-screening"
+    TORONTO_IMMUNIZATION_FORUM = "toronto-immunization-forum"
+    DENVER_SANITATION_FORUM = "denver-sanitation-forum"
 
 
 class Cabin(Enum):

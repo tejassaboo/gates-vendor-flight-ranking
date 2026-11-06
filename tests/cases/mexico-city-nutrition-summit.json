@@ -1,17 +1,19 @@
 {
  "scenario": "mexico-city-nutrition-summit",
- "note": "International. CW 1260 (301 min) and CW 1264 (298 min) tie at 46500; CW 1260 departs 10 min from 08:00, CW 1264 340 min. CW 1260 has a segment over 300, so business is allowed even though the vendor asks for economy.",
+ "note": "International. CW 1260 (301 min) and CW 1264 (298 min) tie at 46500; CW 1260 departs 10 min from 08:00, CW 1264 340 min. RG 702 (48900) is the third preferred nonstop. SM 411 (21:45, 37600) and SM 405 (39800) are cheaper but not preferred. CW 1260 has a segment over 300, so business is allowed even though the vendor asks for economy.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I383",
-   "I384",
-   "I499",
-   "I529",
-   "I270"
+   "I923",
+   "I719",
+   "I393",
+   "I472",
+   "I512",
+   "I426",
+   "I681"
   ],
-  "selected_itinerary_id": "I383",
+  "selected_itinerary_id": "I923",
   "allowed_cabin": "business",
-  "hotel_id": "H342"
+  "hotel_id": "H896"
  },
  "broken": [
   {
@@ -25,13 +27,15 @@
    "why": "breaks the fare tie the wrong way",
    "change": {
     "ranked_itinerary_ids": [
-     "I384",
-     "I383",
-     "I499",
-     "I529",
-     "I270"
+     "I719",
+     "I923",
+     "I393",
+     "I472",
+     "I512",
+     "I426",
+     "I681"
     ],
-    "selected_itinerary_id": "I384"
+    "selected_itinerary_id": "I719"
    },
    "reason": "selected-correct"
   },
@@ -39,11 +43,13 @@
    "why": "ranks the cheaper non-preferred nonstop above a preferred one",
    "change": {
     "ranked_itinerary_ids": [
-     "I383",
-     "I499",
-     "I384",
-     "I529",
-     "I270"
+     "I923",
+     "I719",
+     "I472",
+     "I393",
+     "I512",
+     "I426",
+     "I681"
     ]
    },
    "reason": "ranking-correct"
@@ -51,7 +57,7 @@
   {
    "why": "books the Four Seasons",
    "change": {
-    "hotel_id": "H496"
+    "hotel_id": "H852"
    },
    "reason": "hotel-not-banned"
   }

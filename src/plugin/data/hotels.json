@@ -1,206 +1,14 @@
 [
  {
-  "hotel_id": "H135",
-  "name": "Four Seasons Hotel Washington DC",
-  "brand": "Four Seasons",
+  "hotel_id": "H104",
+  "name": "Georgetown Canal House",
+  "brand": "Independent",
   "city": "Washington D.C.",
-  "rate_before_tax_cents": 61000,
-  "tax_cents": 9100
- },
- {
-  "hotel_id": "H142",
-  "name": "Four Seasons Resort Oahu at Ko Olina",
-  "brand": "Four Seasons",
-  "city": "Honolulu",
-  "rate_before_tax_cents": 25500,
-  "tax_cents": 4600
- },
- {
-  "hotel_id": "H164",
-  "name": "Casa Roma Suites",
-  "brand": "Casa Hotels",
-  "city": "Mexico City",
-  "rate_before_tax_cents": 21400,
-  "tax_cents": 3800
- },
- {
-  "hotel_id": "H238",
-  "name": "Capitol Lantern Suites",
-  "brand": "Lantern Hotels",
-  "city": "Washington D.C.",
-  "rate_before_tax_cents": 34800,
-  "tax_cents": 5100
- },
- {
-  "hotel_id": "H246",
-  "name": "Broadway Neon Suites",
-  "brand": "Independent",
-  "city": "Nashville",
-  "rate_before_tax_cents": 31000,
-  "tax_cents": 5300
- },
- {
-  "hotel_id": "H271",
-  "name": "Beacon Hill Lantern Inn",
-  "brand": "Independent",
-  "city": "Boston",
-  "rate_before_tax_cents": 38600,
-  "tax_cents": 6400
- },
- {
-  "hotel_id": "H299",
-  "name": "Kensington Wren House",
-  "brand": "Wren Collection",
-  "city": "London",
-  "rate_before_tax_cents": 49900,
-  "tax_cents": 9900
- },
- {
-  "hotel_id": "H316",
-  "name": "Four Seasons Hotel Boston",
-  "brand": "Four Seasons",
-  "city": "Boston",
-  "rate_before_tax_cents": 37900,
-  "tax_cents": 6300
- },
- {
-  "hotel_id": "H332",
-  "name": "Hudson Yards Lodge",
-  "brand": "Independent",
-  "city": "New York City",
-  "rate_before_tax_cents": 38800,
-  "tax_cents": 6200
- },
- {
-  "hotel_id": "H339",
-  "name": "Four Seasons Hotel London at Park Lane",
-  "brand": "Four Seasons",
-  "city": "London",
-  "rate_before_tax_cents": 44500,
-  "tax_cents": 8900
- },
- {
-  "hotel_id": "H341",
-  "name": "Gigiri Acacia Hotel",
-  "brand": "Independent",
-  "city": "Nairobi",
-  "rate_before_tax_cents": 21800,
-  "tax_cents": 3500
- },
- {
-  "hotel_id": "H342",
-  "name": "Hotel Reforma Jacarandas",
-  "brand": "Independent",
-  "city": "Mexico City",
-  "rate_before_tax_cents": 18900,
-  "tax_cents": 3400
- },
- {
-  "hotel_id": "H344",
-  "name": "Four Seasons Hotel New York Downtown",
-  "brand": "Four Seasons",
-  "city": "New York City",
-  "rate_before_tax_cents": 52000,
-  "tax_cents": 8300
- },
- {
-  "hotel_id": "H361",
-  "name": "Manoa Garden Inn",
-  "brand": "Garden Inns",
-  "city": "Honolulu",
-  "rate_before_tax_cents": 28400,
-  "tax_cents": 1400
- },
- {
-  "hotel_id": "H369",
-  "name": "Four Seasons Hotel Seattle",
-  "brand": "Four Seasons",
-  "city": "Seattle",
-  "rate_before_tax_cents": 27500,
-  "tax_cents": 4300
- },
- {
-  "hotel_id": "H376",
-  "name": "Waikiki Shoreline Tower",
-  "brand": "Shoreline Resorts",
-  "city": "Honolulu",
-  "rate_before_tax_cents": 31500,
+  "rate_before_tax_cents": 35000,
   "tax_cents": 5200
  },
  {
-  "hotel_id": "H449",
-  "name": "Dream Nashville Hotel",
-  "brand": "Dream Hotels",
-  "city": "Nashville",
-  "rate_before_tax_cents": 21900,
-  "tax_cents": 3700
- },
- {
-  "hotel_id": "H458",
-  "name": "Southbank Lantern Hotel",
-  "brand": "Lantern Hotels",
-  "city": "London",
-  "rate_before_tax_cents": 47501,
-  "tax_cents": 9500
- },
- {
-  "hotel_id": "H487",
-  "name": "Back Bay Ledger Hotel",
-  "brand": "Ledger Hotels",
-  "city": "Boston",
-  "rate_before_tax_cents": 41200,
-  "tax_cents": 6800
- },
- {
-  "hotel_id": "H496",
-  "name": "Four Seasons Hotel Mexico City",
-  "brand": "Four Seasons",
-  "city": "Mexico City",
-  "rate_before_tax_cents": 29500,
-  "tax_cents": 5300
- },
- {
-  "hotel_id": "H512",
-  "name": "South Lake Union Loft",
-  "brand": "Loft Hotels",
-  "city": "Seattle",
-  "rate_before_tax_cents": 29900,
-  "tax_cents": 4700
- },
- {
-  "hotel_id": "H565",
-  "name": "Harborview Commons Hotel",
-  "brand": "Commons Collection",
-  "city": "Boston",
-  "rate_before_tax_cents": 39950,
-  "tax_cents": 6600
- },
- {
-  "hotel_id": "H581",
-  "name": "Harbour Island Marriott Tampa",
-  "brand": "Marriott",
-  "city": "Tampa",
-  "rate_before_tax_cents": 25400,
-  "tax_cents": 3800
- },
- {
-  "hotel_id": "H692",
-  "name": "Bayshore Palms Inn",
-  "brand": "Palms Inns",
-  "city": "Tampa",
-  "rate_before_tax_cents": 28800,
-  "tax_cents": 4300
- },
- {
-  "hotel_id": "H709",
-  "name": "Ybor Cigar Factory Hotel",
-  "brand": "Independent",
-  "city": "Tampa",
-  "rate_before_tax_cents": 26900,
-  "tax_cents": 4000
- },
- {
-  "hotel_id": "H741",
+  "hotel_id": "H113",
   "name": "Westlands Baobab Suites",
   "brand": "Baobab Hotels",
   "city": "Nairobi",
@@ -208,111 +16,31 @@
   "tax_cents": 3900
  },
  {
-  "hotel_id": "H747",
-  "name": "Dupont Ivy Hotel",
-  "brand": "Independent",
-  "city": "Washington D.C.",
-  "rate_before_tax_cents": 34500,
-  "tax_cents": 5100
- },
- {
-  "hotel_id": "H750",
-  "name": "Foggy Bottom Commons",
-  "brand": "Commons Collection",
-  "city": "Washington D.C.",
-  "rate_before_tax_cents": 35100,
-  "tax_cents": 5200
- },
- {
-  "hotel_id": "H768",
-  "name": "Coral Way Courtyard Inn",
-  "brand": "Independent",
-  "city": "Miami",
-  "rate_before_tax_cents": 27900,
-  "tax_cents": 4700
- },
- {
-  "hotel_id": "H802",
-  "name": "Music Row Porchlight Inn",
+  "hotel_id": "H134",
+  "name": "East Nashville Fiddle Inn",
   "brand": "Independent",
   "city": "Nashville",
-  "rate_before_tax_cents": 23800,
-  "tax_cents": 4000
+  "rate_before_tax_cents": 24600,
+  "tax_cents": 4100
  },
  {
-  "hotel_id": "H815",
-  "name": "Pike Street Ferry Hotel",
+  "hotel_id": "H147",
+  "name": "Broadway Neon Suites",
   "brand": "Independent",
-  "city": "Seattle",
-  "rate_before_tax_cents": 28900,
-  "tax_cents": 4500
- },
- {
-  "hotel_id": "H837",
-  "name": "Bryant Park Meridian",
-  "brand": "Meridian House",
-  "city": "New York City",
-  "rate_before_tax_cents": 36500,
-  "tax_cents": 5800
- },
- {
-  "hotel_id": "H846",
-  "name": "Four Seasons Hotel Miami",
-  "brand": "Four Seasons",
-  "city": "Miami",
-  "rate_before_tax_cents": 26800,
-  "tax_cents": 4600
- },
- {
-  "hotel_id": "H855",
-  "name": "Bloomsbury Quill Hotel",
-  "brand": "Independent",
-  "city": "London",
-  "rate_before_tax_cents": 47500,
-  "tax_cents": 9500
- },
- {
-  "hotel_id": "H870",
-  "name": "Karen Hills Lodge",
-  "brand": "Independent",
-  "city": "Nairobi",
-  "rate_before_tax_cents": 30500,
-  "tax_cents": 4900
- },
- {
-  "hotel_id": "H893",
-  "name": "Kaimana Reef Hotel",
-  "brand": "Independent",
-  "city": "Honolulu",
-  "rate_before_tax_cents": 27200,
-  "tax_cents": 5600
- },
- {
-  "hotel_id": "H899",
-  "name": "The Gulch Foundry Hotel",
-  "brand": "Foundry Hotels",
   "city": "Nashville",
-  "rate_before_tax_cents": 26500,
-  "tax_cents": 4500
+  "rate_before_tax_cents": 31000,
+  "tax_cents": 5300
  },
  {
-  "hotel_id": "H913",
-  "name": "Midtown Atrium Hotel",
-  "brand": "Atrium Stays",
-  "city": "New York City",
-  "rate_before_tax_cents": 40500,
-  "tax_cents": 6500
+  "hotel_id": "H157",
+  "name": "Little Havana Casita Inn",
+  "brand": "Independent",
+  "city": "Miami",
+  "rate_before_tax_cents": 28400,
+  "tax_cents": 4800
  },
  {
-  "hotel_id": "H922",
-  "name": "Polanco Vista Hotel",
-  "brand": "Vista Group",
-  "city": "Mexico City",
-  "rate_before_tax_cents": 31200,
-  "tax_cents": 5600
- },
- {
-  "hotel_id": "H961",
+  "hotel_id": "H184",
   "name": "Brickell Tide Hotel",
   "brand": "Tide Hotels",
   "city": "Miami",
@@ -320,15 +48,15 @@
   "tax_cents": 5000
  },
  {
-  "hotel_id": "H968",
-  "name": "Belltown Cedar Hotel",
-  "brand": "Independent",
-  "city": "Seattle",
-  "rate_before_tax_cents": 33500,
-  "tax_cents": 5200
+  "hotel_id": "H189",
+  "name": "The Gulch Foundry Hotel",
+  "brand": "Foundry Hotels",
+  "city": "Nashville",
+  "rate_before_tax_cents": 26500,
+  "tax_cents": 4500
  },
  {
-  "hotel_id": "H978",
+  "hotel_id": "H198",
   "name": "Tampa Marriott Water Street",
   "brand": "Marriott",
   "city": "Tampa",
@@ -336,11 +64,651 @@
   "tax_cents": 3600
  },
  {
-  "hotel_id": "H983",
+  "hotel_id": "H216",
+  "name": "Four Seasons Hotel Seattle",
+  "brand": "Four Seasons",
+  "city": "Seattle",
+  "rate_before_tax_cents": 27500,
+  "tax_cents": 4300
+ },
+ {
+  "hotel_id": "H235",
+  "name": "Four Seasons Hotel New York",
+  "brand": "Four Seasons",
+  "city": "New York City",
+  "rate_before_tax_cents": 39000,
+  "tax_cents": 6200
+ },
+ {
+  "hotel_id": "H240",
+  "name": "Four Seasons Hotel London at Park Lane",
+  "brand": "Four Seasons",
+  "city": "London",
+  "rate_before_tax_cents": 44500,
+  "tax_cents": 8900
+ },
+ {
+  "hotel_id": "H258",
+  "name": "Silver Lake Reservoir Inn",
+  "brand": "Independent",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 28900,
+  "tax_cents": 4600
+ },
+ {
+  "hotel_id": "H265",
+  "name": "Bryant Park Meridian",
+  "brand": "Meridian House",
+  "city": "New York City",
+  "rate_before_tax_cents": 36500,
+  "tax_cents": 5800
+ },
+ {
+  "hotel_id": "H290",
+  "name": "Four Seasons Hotel Boston",
+  "brand": "Four Seasons",
+  "city": "Boston",
+  "rate_before_tax_cents": 37900,
+  "tax_cents": 6300
+ },
+ {
+  "hotel_id": "H294",
+  "name": "Four Seasons Hotel Washington DC",
+  "brand": "Four Seasons",
+  "city": "Washington D.C.",
+  "rate_before_tax_cents": 61000,
+  "tax_cents": 9100
+ },
+ {
+  "hotel_id": "H301",
+  "name": "Bayshore Palms Inn",
+  "brand": "Palms Inns",
+  "city": "Tampa",
+  "rate_before_tax_cents": 28800,
+  "tax_cents": 4300
+ },
+ {
+  "hotel_id": "H316",
+  "name": "Fremont Troll House Inn",
+  "brand": "Independent",
+  "city": "Seattle",
+  "rate_before_tax_cents": 29200,
+  "tax_cents": 4600
+ },
+ {
+  "hotel_id": "H336",
+  "name": "The Charles Hotel",
+  "brand": "Independent",
+  "city": "Boston",
+  "rate_before_tax_cents": 36900,
+  "tax_cents": 6100
+ },
+ {
+  "hotel_id": "H337",
+  "name": "Four Seasons Hotel Denver",
+  "brand": "Four Seasons",
+  "city": "Denver",
+  "rate_before_tax_cents": 26500,
+  "tax_cents": 3900
+ },
+ {
+  "hotel_id": "H350",
+  "name": "Kaimana Reef Hotel",
+  "brand": "Independent",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 27200,
+  "tax_cents": 5600
+ },
+ {
+  "hotel_id": "H353",
+  "name": "Tech Center Commons",
+  "brand": "Commons Collection",
+  "city": "Denver",
+  "rate_before_tax_cents": 32200,
+  "tax_cents": 4700
+ },
+ {
+  "hotel_id": "H364",
+  "name": "South Lake Union Loft",
+  "brand": "Loft Hotels",
+  "city": "Seattle",
+  "rate_before_tax_cents": 29900,
+  "tax_cents": 4700
+ },
+ {
+  "hotel_id": "H367",
+  "name": "Bloor Lantern Suites",
+  "brand": "Lantern Hotels",
+  "city": "Toronto",
+  "rate_before_tax_cents": 30750,
+  "tax_cents": 4000
+ },
+ {
+  "hotel_id": "H372",
+  "name": "Waikiki Shoreline Tower",
+  "brand": "Shoreline Resorts",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 31500,
+  "tax_cents": 5200
+ },
+ {
+  "hotel_id": "H375",
+  "name": "Kensington Market Rooms",
+  "brand": "Independent",
+  "city": "Toronto",
+  "rate_before_tax_cents": 39900,
+  "tax_cents": 5200
+ },
+ {
+  "hotel_id": "H376",
+  "name": "Four Seasons Hotel Toronto",
+  "brand": "Four Seasons",
+  "city": "Toronto",
+  "rate_before_tax_cents": 27900,
+  "tax_cents": 3600
+ },
+ {
+  "hotel_id": "H378",
+  "name": "Manoa Garden Inn",
+  "brand": "Garden Inns",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 28400,
+  "tax_cents": 1400
+ },
+ {
+  "hotel_id": "H387",
+  "name": "Ala Moana Breeze Hotel",
+  "brand": "Independent",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 29800,
+  "tax_cents": 5100
+ },
+ {
+  "hotel_id": "H389",
+  "name": "Polanco Vista Hotel",
+  "brand": "Vista Group",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 31200,
+  "tax_cents": 5600
+ },
+ {
+  "hotel_id": "H394",
+  "name": "Westwood Palm Court",
+  "brand": "Independent",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 27400,
+  "tax_cents": 4400
+ },
+ {
+  "hotel_id": "H402",
+  "name": "Foggy Bottom Commons",
+  "brand": "Commons Collection",
+  "city": "Washington D.C.",
+  "rate_before_tax_cents": 35100,
+  "tax_cents": 5200
+ },
+ {
+  "hotel_id": "H426",
+  "name": "King Street Commons",
+  "brand": "Commons Collection",
+  "city": "Toronto",
+  "rate_before_tax_cents": 33200,
+  "tax_cents": 4300
+ },
+ {
+  "hotel_id": "H442",
+  "name": "Highlands Bluebird Hotel",
+  "brand": "Independent",
+  "city": "Denver",
+  "rate_before_tax_cents": 30400,
+  "tax_cents": 4500
+ },
+ {
+  "hotel_id": "H450",
+  "name": "Cherry Creek Aspen Suites",
+  "brand": "Aspen Suites",
+  "city": "Denver",
+  "rate_before_tax_cents": 29100,
+  "tax_cents": 4300
+ },
+ {
+  "hotel_id": "H451",
+  "name": "Southbank Lantern Hotel",
+  "brand": "Lantern Hotels",
+  "city": "London",
+  "rate_before_tax_cents": 47501,
+  "tax_cents": 9500
+ },
+ {
+  "hotel_id": "H468",
+  "name": "Shoreditch Loom Hotel",
+  "brand": "Independent",
+  "city": "London",
+  "rate_before_tax_cents": 52300,
+  "tax_cents": 10400
+ },
+ {
+  "hotel_id": "H470",
+  "name": "Larimer Square Ledger",
+  "brand": "Ledger Hotels",
+  "city": "Denver",
+  "rate_before_tax_cents": 37500,
+  "tax_cents": 5500
+ },
+ {
+  "hotel_id": "H490",
+  "name": "Upper Hill Savanna Suites",
+  "brand": "Savanna Hotels",
+  "city": "Nairobi",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 4800
+ },
+ {
+  "hotel_id": "H491",
+  "name": "Beacon Hill Lantern Inn",
+  "brand": "Independent",
+  "city": "Boston",
+  "rate_before_tax_cents": 38600,
+  "tax_cents": 6400
+ },
+ {
+  "hotel_id": "H517",
+  "name": "Yorkville Aster House",
+  "brand": "Independent",
+  "city": "Toronto",
+  "rate_before_tax_cents": 36500,
+  "tax_cents": 4700
+ },
+ {
+  "hotel_id": "H524",
+  "name": "Four Seasons Hotel London at Trinity Square",
+  "brand": "Four Seasons",
+  "city": "London",
+  "rate_before_tax_cents": 46800,
+  "tax_cents": 9400
+ },
+ {
+  "hotel_id": "H527",
+  "name": "Harbourfront Maple Hotel",
+  "brand": "Independent",
+  "city": "Toronto",
+  "rate_before_tax_cents": 31800,
+  "tax_cents": 4100
+ },
+ {
+  "hotel_id": "H529",
+  "name": "Downtown Broadway Lofts",
+  "brand": "Loft Hotels",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 4800
+ },
+ {
+  "hotel_id": "H532",
+  "name": "Capitol Hill Pine Lofts",
+  "brand": "Independent",
+  "city": "Seattle",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 4700
+ },
+ {
+  "hotel_id": "H537",
+  "name": "Printers Alley Vault Hotel",
+  "brand": "Vault Hotels",
+  "city": "Nashville",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 5100
+ },
+ {
+  "hotel_id": "H585",
+  "name": "Diamond Head Terrace",
+  "brand": "Terrace Inns",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 30001,
+  "tax_cents": 5200
+ },
+ {
+  "hotel_id": "H590",
   "name": "Wynwood Mural House",
   "brand": "Independent",
   "city": "Miami",
   "rate_before_tax_cents": 32400,
   "tax_cents": 5500
+ },
+ {
+  "hotel_id": "H604",
+  "name": "Culver Studio Suites",
+  "brand": "Independent",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 31200,
+  "tax_cents": 5000
+ },
+ {
+  "hotel_id": "H606",
+  "name": "Distillery Lane Inn",
+  "brand": "Independent",
+  "city": "Toronto",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 3900
+ },
+ {
+  "hotel_id": "H615",
+  "name": "Karen Hills Lodge",
+  "brand": "Independent",
+  "city": "Nairobi",
+  "rate_before_tax_cents": 30500,
+  "tax_cents": 4900
+ },
+ {
+  "hotel_id": "H635",
+  "name": "Belltown Cedar Hotel",
+  "brand": "Independent",
+  "city": "Seattle",
+  "rate_before_tax_cents": 33500,
+  "tax_cents": 5200
+ },
+ {
+  "hotel_id": "H639",
+  "name": "South Beach Deco Palms",
+  "brand": "Independent",
+  "city": "Miami",
+  "rate_before_tax_cents": 30001,
+  "tax_cents": 5100
+ },
+ {
+  "hotel_id": "H645",
+  "name": "Harborview Commons Hotel",
+  "brand": "Commons Collection",
+  "city": "Boston",
+  "rate_before_tax_cents": 39950,
+  "tax_cents": 6600
+ },
+ {
+  "hotel_id": "H658",
+  "name": "LoDo Union Station Inn",
+  "brand": "Independent",
+  "city": "Denver",
+  "rate_before_tax_cents": 24900,
+  "tax_cents": 3700
+ },
+ {
+  "hotel_id": "H688",
+  "name": "Santa Monica Pier House",
+  "brand": "Pier Hotels",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 29950,
+  "tax_cents": 4800
+ },
+ {
+  "hotel_id": "H693",
+  "name": "Four Seasons Hotel Los Angeles at Beverly Hills",
+  "brand": "Four Seasons",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 52000,
+  "tax_cents": 8400
+ },
+ {
+  "hotel_id": "H700",
+  "name": "Coral Way Courtyard Inn",
+  "brand": "Independent",
+  "city": "Miami",
+  "rate_before_tax_cents": 27900,
+  "tax_cents": 4700
+ },
+ {
+  "hotel_id": "H702",
+  "name": "Gigiri Acacia Hotel",
+  "brand": "Independent",
+  "city": "Nairobi",
+  "rate_before_tax_cents": 21800,
+  "tax_cents": 3500
+ },
+ {
+  "hotel_id": "H712",
+  "name": "Bloomsbury Quill Hotel",
+  "brand": "Independent",
+  "city": "London",
+  "rate_before_tax_cents": 47500,
+  "tax_cents": 9500
+ },
+ {
+  "hotel_id": "H719",
+  "name": "Coyoacan Patio Inn",
+  "brand": "Independent",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 5400
+ },
+ {
+  "hotel_id": "H741",
+  "name": "Ybor Cigar Factory Hotel",
+  "brand": "Independent",
+  "city": "Tampa",
+  "rate_before_tax_cents": 26900,
+  "tax_cents": 4000
+ },
+ {
+  "hotel_id": "H750",
+  "name": "Four Seasons Hotel Miami",
+  "brand": "Four Seasons",
+  "city": "Miami",
+  "rate_before_tax_cents": 26800,
+  "tax_cents": 4600
+ },
+ {
+  "hotel_id": "H752",
+  "name": "Seaport Tidewater Hotel",
+  "brand": "Independent",
+  "city": "Boston",
+  "rate_before_tax_cents": 39400,
+  "tax_cents": 6500
+ },
+ {
+  "hotel_id": "H773",
+  "name": "Channelside Pelican Hotel",
+  "brand": "Independent",
+  "city": "Tampa",
+  "rate_before_tax_cents": 27300,
+  "tax_cents": 4100
+ },
+ {
+  "hotel_id": "H777",
+  "name": "Adams Morgan Row House",
+  "brand": "Independent",
+  "city": "Washington D.C.",
+  "rate_before_tax_cents": 36200,
+  "tax_cents": 5300
+ },
+ {
+  "hotel_id": "H781",
+  "name": "Echo Park Arbor Inn",
+  "brand": "Independent",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 27400,
+  "tax_cents": 4300
+ },
+ {
+  "hotel_id": "H797",
+  "name": "Kensington Wren House",
+  "brand": "Wren Collection",
+  "city": "London",
+  "rate_before_tax_cents": 49900,
+  "tax_cents": 9900
+ },
+ {
+  "hotel_id": "H801",
+  "name": "Beverly Wilshire",
+  "brand": "Four Seasons",
+  "city": "Los Angeles",
+  "rate_before_tax_cents": 58000,
+  "tax_cents": 9300
+ },
+ {
+  "hotel_id": "H808",
+  "name": "Kilimani Jacaranda Hotel",
+  "brand": "Independent",
+  "city": "Nairobi",
+  "rate_before_tax_cents": 23100,
+  "tax_cents": 3700
+ },
+ {
+  "hotel_id": "H819",
+  "name": "Midtown Atrium Hotel",
+  "brand": "Atrium Stays",
+  "city": "New York City",
+  "rate_before_tax_cents": 40500,
+  "tax_cents": 6500
+ },
+ {
+  "hotel_id": "H826",
+  "name": "Capitol Hill Brick House",
+  "brand": "Independent",
+  "city": "Denver",
+  "rate_before_tax_cents": 25800,
+  "tax_cents": 3800
+ },
+ {
+  "hotel_id": "H828",
+  "name": "Pike Street Ferry Hotel",
+  "brand": "Independent",
+  "city": "Seattle",
+  "rate_before_tax_cents": 28900,
+  "tax_cents": 4500
+ },
+ {
+  "hotel_id": "H834",
+  "name": "Condesa Parque Hotel",
+  "brand": "Independent",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 19900,
+  "tax_cents": 3600
+ },
+ {
+  "hotel_id": "H838",
+  "name": "RiNo Art Lofts",
+  "brand": "Loft Hotels",
+  "city": "Denver",
+  "rate_before_tax_cents": 30000,
+  "tax_cents": 4400
+ },
+ {
+  "hotel_id": "H842",
+  "name": "Music Row Porchlight Inn",
+  "brand": "Independent",
+  "city": "Nashville",
+  "rate_before_tax_cents": 23800,
+  "tax_cents": 4000
+ },
+ {
+  "hotel_id": "H852",
+  "name": "Four Seasons Hotel Mexico City",
+  "brand": "Four Seasons",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 29500,
+  "tax_cents": 5300
+ },
+ {
+  "hotel_id": "H862",
+  "name": "Casa Roma Suites",
+  "brand": "Casa Hotels",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 21400,
+  "tax_cents": 3800
+ },
+ {
+  "hotel_id": "H869",
+  "name": "Four Seasons Hotel New York Downtown",
+  "brand": "Four Seasons",
+  "city": "New York City",
+  "rate_before_tax_cents": 52000,
+  "tax_cents": 8300
+ },
+ {
+  "hotel_id": "H882",
+  "name": "Hyde Park Verandah Inn",
+  "brand": "Independent",
+  "city": "Tampa",
+  "rate_before_tax_cents": 30200,
+  "tax_cents": 4500
+ },
+ {
+  "hotel_id": "H890",
+  "name": "Dream Nashville Hotel",
+  "brand": "Dream Hotels",
+  "city": "Nashville",
+  "rate_before_tax_cents": 21900,
+  "tax_cents": 3700
+ },
+ {
+  "hotel_id": "H896",
+  "name": "Hotel Reforma Jacarandas",
+  "brand": "Independent",
+  "city": "Mexico City",
+  "rate_before_tax_cents": 18900,
+  "tax_cents": 3400
+ },
+ {
+  "hotel_id": "H906",
+  "name": "Back Bay Ledger Hotel",
+  "brand": "Ledger Hotels",
+  "city": "Boston",
+  "rate_before_tax_cents": 41200,
+  "tax_cents": 6800
+ },
+ {
+  "hotel_id": "H924",
+  "name": "Hudson Yards Lodge",
+  "brand": "Independent",
+  "city": "New York City",
+  "rate_before_tax_cents": 38800,
+  "tax_cents": 6200
+ },
+ {
+  "hotel_id": "H927",
+  "name": "Queen West Loft Hotel",
+  "brand": "Loft Hotels",
+  "city": "Toronto",
+  "rate_before_tax_cents": 30001,
+  "tax_cents": 3900
+ },
+ {
+  "hotel_id": "H940",
+  "name": "Dupont Ivy Hotel",
+  "brand": "Independent",
+  "city": "Washington D.C.",
+  "rate_before_tax_cents": 34500,
+  "tax_cents": 5100
+ },
+ {
+  "hotel_id": "H957",
+  "name": "Harbour Island Marriott Tampa",
+  "brand": "Marriott",
+  "city": "Tampa",
+  "rate_before_tax_cents": 25400,
+  "tax_cents": 3800
+ },
+ {
+  "hotel_id": "H959",
+  "name": "Capitol Lantern Suites",
+  "brand": "Lantern Hotels",
+  "city": "Washington D.C.",
+  "rate_before_tax_cents": 34800,
+  "tax_cents": 5100
+ },
+ {
+  "hotel_id": "H973",
+  "name": "Four Seasons Resort Oahu at Ko Olina",
+  "brand": "Four Seasons",
+  "city": "Honolulu",
+  "rate_before_tax_cents": 25500,
+  "tax_cents": 4600
+ },
+ {
+  "hotel_id": "H984",
+  "name": "Chelsea Market Rooms",
+  "brand": "Independent",
+  "city": "New York City",
+  "rate_before_tax_cents": 37200,
+  "tax_cents": 5900
  }
 ]

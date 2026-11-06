@@ -1,0 +1,76 @@
+{
+ "scenario": "denver-sanitation-forum",
+ "note": "MIA to DEN, domestic. CW 1500 is the cheapest preferred nonstop (27600) and departs 21:05, in the late window, but flies exactly 300 min, which is not more than 300: premium_economy. Its twin CW 1504 (21:20, 301 min, 28900) ranks second and would allow business. SJ 220 and PB 44 (22:15, 305 min) are cheaper but not preferred. Denver uses the 30000 default: LoDo Union Station Inn 24900 is the cheapest compliant; the Four Seasons is banned.",
+ "expected": {
+  "ranked_itinerary_ids": [
+   "I723",
+   "I421",
+   "I452",
+   "I949",
+   "I699",
+   "I682",
+   "I710",
+   "I726"
+  ],
+  "selected_itinerary_id": "I723",
+  "allowed_cabin": "premium_economy",
+  "hotel_id": "H658"
+ },
+ "broken": [
+  {
+   "why": "gives business at exactly 300 minutes on a late departure",
+   "change": {
+    "allowed_cabin": "business"
+   },
+   "reason": "cabin-correct"
+  },
+  {
+   "why": "picks the 301-minute twin to unlock business",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I421",
+     "I723",
+     "I452",
+     "I949",
+     "I699",
+     "I682",
+     "I710",
+     "I726"
+    ],
+    "selected_itinerary_id": "I421",
+    "allowed_cabin": "business"
+   },
+   "reason": "selected-correct"
+  },
+  {
+   "why": "books the Four Seasons Denver",
+   "change": {
+    "hotel_id": "H337"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "books a compliant hotel that is not the cheapest",
+   "change": {
+    "hotel_id": "H838"
+   },
+   "reason": "hotel-correct"
+  },
+  {
+   "why": "ranks the cheaper late non-preferred nonstop above the preferred ones",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I723",
+     "I421",
+     "I682",
+     "I452",
+     "I949",
+     "I699",
+     "I710",
+     "I726"
+    ]
+   },
+   "reason": "ranking-correct"
+  }
+ ]
+}

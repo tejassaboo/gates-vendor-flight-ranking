@@ -10,8 +10,23 @@ submitted one against it in stages, each a list of constraints with stable ids (
 
 A stage is checked only when every earlier stage holds. The message names the first failing constraint
 and how many more fail, with the rule and the numbers behind it. Shape problems (types, Enum values,
-missing or extra fields) never get here: NanoAgent's build_output refuses them first. The score is 1.0
-when every constraint holds, else 0.0.
+missing or extra fields) never get here: NanoAgent's build_output refuses them first.
+
+``valid`` is strict: true only when every constraint holds. ``score`` gives partial credit in [0, 1]
+for how much of the booking is right (``partial_score``):
+
+- selection, 0.30: selected_itinerary_id is the oracle's and heads the ranking (G8);
+- order, 0.30 x (positions that hold the oracle's id) / (candidates), only when the ranking is exactly
+  the candidate set, each once: a partial, padded or stray list earns nothing here;
+- cabin, 0.20: allowed_cabin is the oracle's, and only when the selection is right, because the cabin is
+  defined on the selected itinerary (a right cabin on a wrong flight is a coincidence);
+- hotel, 0.20: hotel_id is the oracle's.
+
+A referential-integrity failure (an id outside the inventory or the trip, a hotel outside the destination
+city) caps the score at 0.50, and a broken answer key or a verifier error scores 0. Wrong is wrong in
+either direction: business instead of premium_economy and economy instead of premium_economy both lose
+the cabin share, a hotel over the cap and a banned one both lose the hotel share. An empty answer scores
+0, and another scenario's answer at most the hotel share, when the two trips share a city.
 """
 
 from .checks import UNEXPECTED, fixtures, plain, result
@@ -120,8 +135,39 @@ def judge(world, scenario, key, pinned, given):
             f"{len(given['ranked_itinerary_ids'])}, {given['allowed_cabin']} allowed, hotel {given['hotel_id']}"
         )
         return result(True, summary, constraints=constraints, expected=key)
+    if failed[0]["id"] == "reference-matches-oracle":
+        score, parts = 0.0, None
+    else:
+        integrity = {"ranked-ids-exist", "ranked-ids-serve-trip", "hotel-exists", "hotel-in-destination"}
+        score, parts = partial_score(key, given, capped=any(item["id"] in integrity for item in failed))
     more = f" (+{len(failed) - 1} more)" if len(failed) > 1 else ""
-    return result(False, f"{failed[0]['id']}: {failed[0]['message']}{more}", constraints=constraints, expected=key)
+    message = f"{failed[0]['id']}: {failed[0]['message']}{more}"
+    return result(False, message, score=score, constraints=constraints, expected=key, score_parts=parts)
+
+
+SHARES = {"selection": 30, "order": 30, "cabin": 20, "hotel": 20}  # hundredths of the score
+INTEGRITY_CAP = 50
+
+
+def partial_score(key, given, *, capped):
+    """(score in [0, 1], its parts) for a shape-valid answer that is not fully right: see the module docstring.
+    Computed in hundredths so that the parts add up exactly."""
+    ranked, wanted = given["ranked_itinerary_ids"], key["ranked_itinerary_ids"]
+    selected = ranked[:1] == [given["selected_itinerary_id"]] and given["selected_itinerary_id"] == key["selected_itinerary_id"]
+    parts = {"selection": SHARES["selection"] if selected else 0, "order": 0, "cabin": 0, "hotel": 0}
+    if sorted(ranked) == sorted(wanted):
+        matches = sum(one == two for one, two in zip(ranked, wanted))
+        parts["order"] = SHARES["order"] * matches // len(wanted)
+    if selected and given["allowed_cabin"] == key["allowed_cabin"]:
+        parts["cabin"] = SHARES["cabin"]
+    if given["hotel_id"] == key["hotel_id"]:
+        parts["hotel"] = SHARES["hotel"]
+    points = sum(parts.values())
+    if capped:
+        points = min(points, INTEGRITY_CAP)
+    reported = {name: value / 100 for name, value in parts.items()}
+    reported["integrity_cap"] = INTEGRITY_CAP / 100 if capped else None
+    return points / 100, reported
 
 
 def entry(identifier, ok, expected, actual, message):

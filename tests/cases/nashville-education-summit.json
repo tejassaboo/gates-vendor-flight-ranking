@@ -1,28 +1,32 @@
 {
  "scenario": "nashville-education-summit",
- "note": "SJ 1450 is the only nonstop: it ranks first although Sunjet is not preferred and the preferred connections are cheaper (nonstop is key 1). Under the three-key reading HL via Chicago (23900) would win instead. Domestic, 252 min: premium_economy. The Dream Nashville Hotel is banned.",
+ "note": "SJ 1450 and PB 212 are the only nonstops: they rank first although neither carrier is preferred and the preferred connections are cheaper (nonstop is key 1); SJ 1450 (30900) before PB 212 (32600). Under the three-key reading HL via Chicago (23900) would win instead. Domestic, 252 min: premium_economy. The Dream Nashville Hotel is banned.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I741",
-   "I721",
-   "I718",
-   "I290"
+   "I271",
+   "I332",
+   "I913",
+   "I565",
+   "I487",
+   "I837"
   ],
-  "selected_itinerary_id": "I741",
+  "selected_itinerary_id": "I271",
   "allowed_cabin": "premium_economy",
-  "hotel_id": "H802"
+  "hotel_id": "H842"
  },
  "broken": [
   {
    "why": "uses the three-key reading",
    "change": {
     "ranked_itinerary_ids": [
-     "I290",
-     "I721",
-     "I718",
-     "I741"
+     "I837",
+     "I913",
+     "I565",
+     "I487",
+     "I271",
+     "I332"
     ],
-    "selected_itinerary_id": "I290"
+    "selected_itinerary_id": "I837"
    },
    "reason": "selected-correct"
   },
@@ -30,19 +34,21 @@
    "why": "puts the preferred connection the vendor likes first",
    "change": {
     "ranked_itinerary_ids": [
-     "I721",
-     "I718",
-     "I741",
-     "I290"
+     "I565",
+     "I913",
+     "I487",
+     "I271",
+     "I332",
+     "I837"
     ],
-    "selected_itinerary_id": "I721"
+    "selected_itinerary_id": "I565"
    },
    "reason": "selected-correct"
   },
   {
    "why": "books the Dream Nashville",
    "change": {
-    "hotel_id": "H449"
+    "hotel_id": "H890"
    },
    "reason": "hotel-not-banned"
   },

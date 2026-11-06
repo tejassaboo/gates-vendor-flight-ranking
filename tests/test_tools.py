@@ -14,7 +14,7 @@ import verifier
 from contract import HotelsInput, ScenarioInput, SearchInput
 from plugin import get_hotels, get_trip_request, search_itineraries
 
-MAX_OUTPUT_CHARS = 4000  # about 1k tokens: every tool output stays far from the hosted 65,536-token budget
+MAX_OUTPUT_CHARS = 6000  # about 1.5k tokens: every tool output stays far from the hosted 65,536-token budget
 
 
 def trip(scenario):
@@ -48,7 +48,7 @@ def test_tool_outputs_match_the_fixtures_and_stay_small(scenario: str) -> None:
 
 def test_search_flags_preferred_carriers_and_applies_no_policy() -> None:
     found = search("SEA", "BOS", "2026-12-07")
-    assert {carrier.code: carrier.preferred for carrier in found.carriers} == {"CW": True, "HL": False, "NS": True, "SJ": False}
+    assert {carrier.code: carrier.preferred for carrier in found.carriers} == {"CW": True, "HL": False, "NS": True, "PB": False, "SJ": False}
     assert search("SEA", "BOS", "2026-12-06").itineraries == []
 
 

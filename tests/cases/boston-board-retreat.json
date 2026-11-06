@@ -1,18 +1,20 @@
 {
  "scenario": "boston-board-retreat",
- "note": "Three preferred nonstops: NS 902 21:00 (29900) is cheapest; CW 488 21:01 and CW 470 20:55 tie at 31200 and split on distance from 21:30 (29 vs 35 min). NS 902 leaves at 21:00 exactly, so no business despite 331 min: premium_economy. SJ 61 is the only non-preferred nonstop, then the two connections. The Four Seasons Boston (37900) is cheaper than the compliant Beacon Hill Lantern Inn (38600).",
+ "note": "Four preferred nonstops: NS 902 21:00 (29900) is cheapest; CW 488 21:01 and CW 470 20:55 tie at 31200 and split on distance from 21:30 (29 vs 35 min); NS 910 (33800) is fourth. NS 902 leaves at 21:00 exactly, so no business despite 331 min: premium_economy. Then the non-preferred nonstops by fare (PB 404 23500, late and long but not preferred; SJ 61 24800), then the preferred connection, then the non-preferred one. Hotels: the Four Seasons Boston (37900) and The Charles Hotel (36900, banned by name) are cheaper than the compliant Beacon Hill Lantern Inn (38600).",
  "expected": {
   "ranked_itinerary_ids": [
    "I973",
    "I467",
    "I278",
+   "I552",
+   "I812",
    "I283",
    "I316",
    "I595"
   ],
   "selected_itinerary_id": "I973",
   "allowed_cabin": "premium_economy",
-  "hotel_id": "H271"
+  "hotel_id": "H491"
  },
  "broken": [
   {
@@ -29,6 +31,8 @@
      "I973",
      "I278",
      "I467",
+     "I552",
+     "I812",
      "I283",
      "I316",
      "I595"
@@ -37,31 +41,41 @@
    "reason": "ranking-correct"
   },
   {
-   "why": "puts the cheaper non-preferred nonstop first",
+   "why": "puts the cheaper late non-preferred nonstop first",
    "change": {
     "ranked_itinerary_ids": [
-     "I283",
+     "I812",
      "I973",
      "I467",
      "I278",
+     "I552",
+     "I283",
      "I316",
      "I595"
     ],
-    "selected_itinerary_id": "I283"
+    "selected_itinerary_id": "I812",
+    "allowed_cabin": "business"
    },
    "reason": "selected-correct"
   },
   {
    "why": "books the Four Seasons the vendor asked for",
    "change": {
-    "hotel_id": "H316"
+    "hotel_id": "H290"
+   },
+   "reason": "hotel-not-banned"
+  },
+  {
+   "why": "books The Charles Hotel, banned by name",
+   "change": {
+    "hotel_id": "H336"
    },
    "reason": "hotel-not-banned"
   },
   {
    "why": "skips the cheapest compliant hotel",
    "change": {
-    "hotel_id": "H565"
+    "hotel_id": "H752"
    },
    "reason": "hotel-correct"
   }

@@ -23,7 +23,9 @@ IMPLEMENTATIONS = {
 }
 MAX_TOOL_CALLS = 4  # plus submit, within the hosted 6 steps whose last may not call tools
 # The one scenario whose ranking needs the last tie-break (itinerary_id): every other key ties.
-ID_TIEBREAKS = {"washington-policy-roundtable": [("I115", "I852")]}
+ID_TIEBREAKS = {"washington-policy-roundtable": [("I702", "I806")]}
+# The one scenario whose two cheapest compliant hotels tie on rate, so the lower hotel_id is booked (G9).
+HOTEL_TIEBREAKS = {"los-angeles-media-screening": ("H394", "H781")}
 
 
 def call(tool, arguments):
@@ -51,7 +53,11 @@ def test_the_answer_is_unique(scenario: str) -> None:
     needed = [(first[4], second[4]) for first, second in pairwise(keys) if first[:4] == second[:4]]
     assert needed == ID_TIEBREAKS.get(scenario, [])
     hotels = compliant_hotels(world(), facts)
-    assert len(hotels) == 1 or hotels[0]["rate_before_tax_cents"] < hotels[1]["rate_before_tax_cents"]
+    if scenario in HOTEL_TIEBREAKS:
+        assert (hotels[0]["hotel_id"], hotels[1]["hotel_id"]) == HOTEL_TIEBREAKS[scenario]
+        assert hotels[0]["rate_before_tax_cents"] == hotels[1]["rate_before_tax_cents"]
+    else:
+        assert len(hotels) == 1 or hotels[0]["rate_before_tax_cents"] < hotels[1]["rate_before_tax_cents"]
 
 
 @pytest.mark.parametrize("scenario", SCENARIOS)

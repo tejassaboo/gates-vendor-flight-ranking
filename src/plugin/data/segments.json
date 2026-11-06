@@ -105,6 +105,32 @@
  },
  {
   "segment_id": "S009",
+  "flight": "NS 910",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "BOS",
+  "depart_local": "2026-12-07T15:30",
+  "arrive_local": "2026-12-07T23:59",
+  "depart_utc": "2026-12-07T23:30Z",
+  "arrive_utc": "2026-12-08T04:59Z",
+  "in_air_minutes": 329
+ },
+ {
+  "segment_id": "S010",
+  "flight": "PB 404",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "SEA",
+  "destination": "BOS",
+  "depart_local": "2026-12-07T23:40",
+  "arrive_local": "2026-12-08T08:02",
+  "depart_utc": "2026-12-08T07:40Z",
+  "arrive_utc": "2026-12-08T13:02Z",
+  "in_air_minutes": 322
+ },
+ {
+  "segment_id": "S011",
   "flight": "CW 210",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -117,7 +143,7 @@
   "in_air_minutes": 318
  },
  {
-  "segment_id": "S010",
+  "segment_id": "S012",
   "flight": "NS 1404",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -130,7 +156,7 @@
   "in_air_minutes": 312
  },
  {
-  "segment_id": "S011",
+  "segment_id": "S013",
   "flight": "SJ 18",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -143,7 +169,7 @@
   "in_air_minutes": 309
  },
  {
-  "segment_id": "S012",
+  "segment_id": "S014",
   "flight": "NS 610",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -156,7 +182,7 @@
   "in_air_minutes": 195
  },
  {
-  "segment_id": "S013",
+  "segment_id": "S015",
   "flight": "NS 1932",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -169,7 +195,7 @@
   "in_air_minutes": 150
  },
  {
-  "segment_id": "S014",
+  "segment_id": "S016",
   "flight": "CW 330",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -182,7 +208,7 @@
   "in_air_minutes": 150
  },
  {
-  "segment_id": "S015",
+  "segment_id": "S017",
   "flight": "CW 1188",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -195,7 +221,33 @@
   "in_air_minutes": 230
  },
  {
-  "segment_id": "S016",
+  "segment_id": "S018",
+  "flight": "NS 1410",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "JFK",
+  "depart_local": "2026-12-08T07:00",
+  "arrive_local": "2026-12-08T15:15",
+  "depart_utc": "2026-12-08T15:00Z",
+  "arrive_utc": "2026-12-08T20:15Z",
+  "in_air_minutes": 315
+ },
+ {
+  "segment_id": "S019",
+  "flight": "PB 90",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "SEA",
+  "destination": "JFK",
+  "depart_local": "2026-12-08T21:00",
+  "arrive_local": "2026-12-09T05:16",
+  "depart_utc": "2026-12-09T05:00Z",
+  "arrive_utc": "2026-12-09T10:16Z",
+  "in_air_minutes": 316
+ },
+ {
+  "segment_id": "S020",
   "flight": "CW 845",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -208,7 +260,7 @@
   "in_air_minutes": 360
  },
  {
-  "segment_id": "S017",
+  "segment_id": "S021",
   "flight": "CW 851",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -221,7 +273,7 @@
   "in_air_minutes": 355
  },
  {
-  "segment_id": "S018",
+  "segment_id": "S022",
   "flight": "NS 1500",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -234,7 +286,7 @@
   "in_air_minutes": 362
  },
  {
-  "segment_id": "S019",
+  "segment_id": "S023",
   "flight": "SJ 707",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -247,7 +299,7 @@
   "in_air_minutes": 350
  },
  {
-  "segment_id": "S020",
+  "segment_id": "S024",
   "flight": "CW 220",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -260,7 +312,7 @@
   "in_air_minutes": 165
  },
  {
-  "segment_id": "S021",
+  "segment_id": "S025",
   "flight": "CW 1610",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -273,7 +325,33 @@
   "in_air_minutes": 340
  },
  {
-  "segment_id": "S022",
+  "segment_id": "S026",
+  "flight": "NS 1506",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "HNL",
+  "depart_local": "2027-01-14T11:30",
+  "arrive_local": "2027-01-14T15:28",
+  "depart_utc": "2027-01-14T19:30Z",
+  "arrive_utc": "2027-01-15T01:28Z",
+  "in_air_minutes": 358
+ },
+ {
+  "segment_id": "S027",
+  "flight": "PB 700",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "SEA",
+  "destination": "HNL",
+  "depart_local": "2027-01-14T22:15",
+  "arrive_local": "2027-01-15T02:12",
+  "depart_utc": "2027-01-15T06:15Z",
+  "arrive_utc": "2027-01-15T12:12Z",
+  "in_air_minutes": 357
+ },
+ {
+  "segment_id": "S028",
   "flight": "CW 1260",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -286,7 +364,7 @@
   "in_air_minutes": 301
  },
  {
-  "segment_id": "S023",
+  "segment_id": "S029",
   "flight": "CW 1264",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -299,7 +377,7 @@
   "in_air_minutes": 298
  },
  {
-  "segment_id": "S024",
+  "segment_id": "S030",
   "flight": "SM 405",
   "marketing_carrier": "SM",
   "operating_carrier": "SM",
@@ -312,7 +390,7 @@
   "in_air_minutes": 300
  },
  {
-  "segment_id": "S025",
+  "segment_id": "S031",
   "flight": "NS 726",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -325,7 +403,7 @@
   "in_air_minutes": 165
  },
  {
-  "segment_id": "S026",
+  "segment_id": "S032",
   "flight": "NS 2290",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -338,7 +416,7 @@
   "in_air_minutes": 210
  },
  {
-  "segment_id": "S027",
+  "segment_id": "S033",
   "flight": "SJ 140",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -351,7 +429,7 @@
   "in_air_minutes": 165
  },
  {
-  "segment_id": "S028",
+  "segment_id": "S034",
   "flight": "SM 913",
   "marketing_carrier": "SM",
   "operating_carrier": "SM",
@@ -364,7 +442,33 @@
   "in_air_minutes": 215
  },
  {
-  "segment_id": "S029",
+  "segment_id": "S035",
+  "flight": "RG 702",
+  "marketing_carrier": "RG",
+  "operating_carrier": "RG",
+  "origin": "SEA",
+  "destination": "MEX",
+  "depart_local": "2027-01-19T18:20",
+  "arrive_local": "2027-01-20T01:19",
+  "depart_utc": "2027-01-20T02:20Z",
+  "arrive_utc": "2027-01-20T07:19Z",
+  "in_air_minutes": 299
+ },
+ {
+  "segment_id": "S036",
+  "flight": "SM 411",
+  "marketing_carrier": "SM",
+  "operating_carrier": "SM",
+  "origin": "SEA",
+  "destination": "MEX",
+  "depart_local": "2027-01-19T21:45",
+  "arrive_local": "2027-01-20T04:48",
+  "depart_utc": "2027-01-20T05:45Z",
+  "arrive_utc": "2027-01-20T10:48Z",
+  "in_air_minutes": 303
+ },
+ {
+  "segment_id": "S037",
   "flight": "CW 1260",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -377,7 +481,7 @@
   "in_air_minutes": 300
  },
  {
-  "segment_id": "S030",
+  "segment_id": "S038",
   "flight": "CW 1264",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -390,7 +494,7 @@
   "in_air_minutes": 301
  },
  {
-  "segment_id": "S031",
+  "segment_id": "S039",
   "flight": "SM 405",
   "marketing_carrier": "SM",
   "operating_carrier": "SM",
@@ -403,7 +507,7 @@
   "in_air_minutes": 302
  },
  {
-  "segment_id": "S032",
+  "segment_id": "S040",
   "flight": "NS 726",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -416,7 +520,7 @@
   "in_air_minutes": 165
  },
  {
-  "segment_id": "S033",
+  "segment_id": "S041",
   "flight": "NS 2290",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -429,7 +533,46 @@
   "in_air_minutes": 210
  },
  {
-  "segment_id": "S034",
+  "segment_id": "S042",
+  "flight": "RG 702",
+  "marketing_carrier": "RG",
+  "operating_carrier": "RG",
+  "origin": "SEA",
+  "destination": "MEX",
+  "depart_local": "2027-02-02T18:20",
+  "arrive_local": "2027-02-03T01:19",
+  "depart_utc": "2027-02-03T02:20Z",
+  "arrive_utc": "2027-02-03T07:19Z",
+  "in_air_minutes": 299
+ },
+ {
+  "segment_id": "S043",
+  "flight": "SJ 140",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "SEA",
+  "destination": "LAX",
+  "depart_local": "2027-02-02T07:15",
+  "arrive_local": "2027-02-02T10:00",
+  "depart_utc": "2027-02-02T15:15Z",
+  "arrive_utc": "2027-02-02T18:00Z",
+  "in_air_minutes": 165
+ },
+ {
+  "segment_id": "S044",
+  "flight": "SM 913",
+  "marketing_carrier": "SM",
+  "operating_carrier": "SM",
+  "origin": "LAX",
+  "destination": "MEX",
+  "depart_local": "2027-02-02T12:00",
+  "arrive_local": "2027-02-02T17:35",
+  "depart_utc": "2027-02-02T20:00Z",
+  "arrive_utc": "2027-02-02T23:35Z",
+  "in_air_minutes": 215
+ },
+ {
+  "segment_id": "S045",
   "flight": "RG 48",
   "marketing_carrier": "RG",
   "operating_carrier": "RG",
@@ -442,7 +585,7 @@
   "in_air_minutes": 575
  },
  {
-  "segment_id": "S035",
+  "segment_id": "S046",
   "flight": "SJ 2",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -455,7 +598,7 @@
   "in_air_minutes": 570
  },
  {
-  "segment_id": "S036",
+  "segment_id": "S047",
   "flight": "TB 6",
   "marketing_carrier": "TB",
   "operating_carrier": "TB",
@@ -468,7 +611,7 @@
   "in_air_minutes": 590
  },
  {
-  "segment_id": "S037",
+  "segment_id": "S048",
   "flight": "TB 1009",
   "marketing_carrier": "TB",
   "operating_carrier": "TB",
@@ -481,7 +624,7 @@
   "in_air_minutes": 75
  },
  {
-  "segment_id": "S038",
+  "segment_id": "S049",
   "flight": "HL 2207",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -494,7 +637,7 @@
   "in_air_minutes": 240
  },
  {
-  "segment_id": "S039",
+  "segment_id": "S050",
   "flight": "HL 98",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -507,7 +650,46 @@
   "in_air_minutes": 470
  },
  {
-  "segment_id": "S040",
+  "segment_id": "S051",
+  "flight": "NS 100",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "LHR",
+  "depart_local": "2027-02-09T18:00",
+  "arrive_local": "2027-02-10T11:32",
+  "depart_utc": "2027-02-10T02:00Z",
+  "arrive_utc": "2027-02-10T11:32Z",
+  "in_air_minutes": 572
+ },
+ {
+  "segment_id": "S052",
+  "flight": "CW 1100",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "SEA",
+  "destination": "JFK",
+  "depart_local": "2027-02-09T08:00",
+  "arrive_local": "2027-02-09T16:15",
+  "depart_utc": "2027-02-09T16:00Z",
+  "arrive_utc": "2027-02-09T21:15Z",
+  "in_air_minutes": 315
+ },
+ {
+  "segment_id": "S053",
+  "flight": "RG 102",
+  "marketing_carrier": "RG",
+  "operating_carrier": "RG",
+  "origin": "JFK",
+  "destination": "LHR",
+  "depart_local": "2027-02-09T19:30",
+  "arrive_local": "2027-02-10T07:20",
+  "depart_utc": "2027-02-10T00:30Z",
+  "arrive_utc": "2027-02-10T07:20Z",
+  "in_air_minutes": 410
+ },
+ {
+  "segment_id": "S054",
   "flight": "CW 6",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -520,7 +702,7 @@
   "in_air_minutes": 290
  },
  {
-  "segment_id": "S041",
+  "segment_id": "S055",
   "flight": "NS 1122",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -533,7 +715,7 @@
   "in_air_minutes": 292
  },
  {
-  "segment_id": "S042",
+  "segment_id": "S056",
   "flight": "CW 14",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -546,7 +728,7 @@
   "in_air_minutes": 289
  },
  {
-  "segment_id": "S043",
+  "segment_id": "S057",
   "flight": "SJ 300",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -559,7 +741,7 @@
   "in_air_minutes": 281
  },
  {
-  "segment_id": "S044",
+  "segment_id": "S058",
   "flight": "HL 2207",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -572,7 +754,7 @@
   "in_air_minutes": 240
  },
  {
-  "segment_id": "S045",
+  "segment_id": "S059",
   "flight": "HL 512",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -585,7 +767,46 @@
   "in_air_minutes": 125
  },
  {
-  "segment_id": "S046",
+  "segment_id": "S060",
+  "flight": "NS 1130",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "DCA",
+  "depart_local": "2027-01-26T17:20",
+  "arrive_local": "2027-01-27T01:08",
+  "depart_utc": "2027-01-27T01:20Z",
+  "arrive_utc": "2027-01-27T06:08Z",
+  "in_air_minutes": 288
+ },
+ {
+  "segment_id": "S061",
+  "flight": "CW 330",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "SEA",
+  "destination": "DEN",
+  "depart_local": "2027-01-26T06:00",
+  "arrive_local": "2027-01-26T09:30",
+  "depart_utc": "2027-01-26T14:00Z",
+  "arrive_utc": "2027-01-26T16:30Z",
+  "in_air_minutes": 150
+ },
+ {
+  "segment_id": "S062",
+  "flight": "CW 1190",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "DEN",
+  "destination": "DCA",
+  "depart_local": "2027-01-26T10:40",
+  "arrive_local": "2027-01-26T16:05",
+  "depart_utc": "2027-01-26T17:40Z",
+  "arrive_utc": "2027-01-26T21:05Z",
+  "in_air_minutes": 205
+ },
+ {
+  "segment_id": "S063",
   "flight": "TB 6",
   "marketing_carrier": "TB",
   "operating_carrier": "TB",
@@ -598,7 +819,7 @@
   "in_air_minutes": 590
  },
  {
-  "segment_id": "S047",
+  "segment_id": "S064",
   "flight": "TB 565",
   "marketing_carrier": "TB",
   "operating_carrier": "TB",
@@ -611,7 +832,7 @@
   "in_air_minutes": 500
  },
  {
-  "segment_id": "S048",
+  "segment_id": "S065",
   "flight": "GP 230",
   "marketing_carrier": "GP",
   "operating_carrier": "GP",
@@ -624,7 +845,7 @@
   "in_air_minutes": 870
  },
  {
-  "segment_id": "S049",
+  "segment_id": "S066",
   "flight": "GP 719",
   "marketing_carrier": "GP",
   "operating_carrier": "GP",
@@ -637,7 +858,7 @@
   "in_air_minutes": 300
  },
  {
-  "segment_id": "S050",
+  "segment_id": "S067",
   "flight": "RG 48",
   "marketing_carrier": "RG",
   "operating_carrier": "RG",
@@ -650,7 +871,7 @@
   "in_air_minutes": 575
  },
  {
-  "segment_id": "S051",
+  "segment_id": "S068",
   "flight": "RG 65",
   "marketing_carrier": "RG",
   "operating_carrier": "RG",
@@ -663,7 +884,7 @@
   "in_air_minutes": 505
  },
  {
-  "segment_id": "S052",
+  "segment_id": "S069",
   "flight": "SJ 9",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -676,7 +897,7 @@
   "in_air_minutes": 310
  },
  {
-  "segment_id": "S053",
+  "segment_id": "S070",
   "flight": "GP 744",
   "marketing_carrier": "GP",
   "operating_carrier": "GP",
@@ -689,7 +910,59 @@
   "in_air_minutes": 900
  },
  {
-  "segment_id": "S054",
+  "segment_id": "S071",
+  "flight": "NS 1404",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "JFK",
+  "depart_local": "2027-02-16T22:30",
+  "arrive_local": "2027-02-17T06:42",
+  "depart_utc": "2027-02-17T06:30Z",
+  "arrive_utc": "2027-02-17T11:42Z",
+  "in_air_minutes": 312
+ },
+ {
+  "segment_id": "S072",
+  "flight": "RG 160",
+  "marketing_carrier": "RG",
+  "operating_carrier": "RG",
+  "origin": "JFK",
+  "destination": "NBO",
+  "depart_local": "2027-02-17T10:30",
+  "arrive_local": "2027-02-18T09:00",
+  "depart_utc": "2027-02-17T15:30Z",
+  "arrive_utc": "2027-02-18T06:00Z",
+  "in_air_minutes": 870
+ },
+ {
+  "segment_id": "S073",
+  "flight": "GP 232",
+  "marketing_carrier": "GP",
+  "operating_carrier": "GP",
+  "origin": "SEA",
+  "destination": "DXB",
+  "depart_local": "2027-02-16T09:10",
+  "arrive_local": "2027-02-17T11:35",
+  "depart_utc": "2027-02-16T17:10Z",
+  "arrive_utc": "2027-02-17T07:35Z",
+  "in_air_minutes": 865
+ },
+ {
+  "segment_id": "S074",
+  "flight": "GP 721",
+  "marketing_carrier": "GP",
+  "operating_carrier": "GP",
+  "origin": "DXB",
+  "destination": "NBO",
+  "depart_local": "2027-02-17T14:30",
+  "arrive_local": "2027-02-17T18:35",
+  "depart_utc": "2027-02-17T10:30Z",
+  "arrive_utc": "2027-02-17T15:35Z",
+  "in_air_minutes": 305
+ },
+ {
+  "segment_id": "S075",
   "flight": "SJ 1450",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -702,7 +975,7 @@
   "in_air_minutes": 252
  },
  {
-  "segment_id": "S055",
+  "segment_id": "S076",
   "flight": "NS 455",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -715,7 +988,7 @@
   "in_air_minutes": 195
  },
  {
-  "segment_id": "S056",
+  "segment_id": "S077",
   "flight": "NS 1288",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -728,7 +1001,7 @@
   "in_air_minutes": 125
  },
  {
-  "segment_id": "S057",
+  "segment_id": "S078",
   "flight": "CW 330",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -741,7 +1014,7 @@
   "in_air_minutes": 150
  },
  {
-  "segment_id": "S058",
+  "segment_id": "S079",
   "flight": "CW 1544",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -754,7 +1027,7 @@
   "in_air_minutes": 145
  },
  {
-  "segment_id": "S059",
+  "segment_id": "S080",
   "flight": "HL 2207",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -767,7 +1040,7 @@
   "in_air_minutes": 240
  },
  {
-  "segment_id": "S060",
+  "segment_id": "S081",
   "flight": "HL 611",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -780,7 +1053,46 @@
   "in_air_minutes": 105
  },
  {
-  "segment_id": "S061",
+  "segment_id": "S082",
+  "flight": "PB 212",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "SEA",
+  "destination": "BNA",
+  "depart_local": "2027-01-21T16:40",
+  "arrive_local": "2027-01-21T22:55",
+  "depart_utc": "2027-01-22T00:40Z",
+  "arrive_utc": "2027-01-22T04:55Z",
+  "in_air_minutes": 255
+ },
+ {
+  "segment_id": "S083",
+  "flight": "CW 220",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "SEA",
+  "destination": "LAX",
+  "depart_local": "2027-01-21T06:00",
+  "arrive_local": "2027-01-21T08:45",
+  "depart_utc": "2027-01-21T14:00Z",
+  "arrive_utc": "2027-01-21T16:45Z",
+  "in_air_minutes": 165
+ },
+ {
+  "segment_id": "S084",
+  "flight": "CW 1550",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "LAX",
+  "destination": "BNA",
+  "depart_local": "2027-01-21T10:10",
+  "arrive_local": "2027-01-21T16:05",
+  "depart_utc": "2027-01-21T18:10Z",
+  "arrive_utc": "2027-01-21T22:05Z",
+  "in_air_minutes": 235
+ },
+ {
+  "segment_id": "S085",
   "flight": "CW 1702",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -793,7 +1105,7 @@
   "in_air_minutes": 318
  },
  {
-  "segment_id": "S062",
+  "segment_id": "S086",
   "flight": "PB 88",
   "marketing_carrier": "PB",
   "operating_carrier": "PB",
@@ -806,7 +1118,7 @@
   "in_air_minutes": 305
  },
  {
-  "segment_id": "S063",
+  "segment_id": "S087",
   "flight": "NS 455",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -819,7 +1131,7 @@
   "in_air_minutes": 195
  },
  {
-  "segment_id": "S064",
+  "segment_id": "S088",
   "flight": "NS 1670",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -832,7 +1144,7 @@
   "in_air_minutes": 190
  },
  {
-  "segment_id": "S065",
+  "segment_id": "S089",
   "flight": "HL 2207",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -845,7 +1157,7 @@
   "in_air_minutes": 240
  },
  {
-  "segment_id": "S066",
+  "segment_id": "S090",
   "flight": "HL 735",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -858,7 +1170,33 @@
   "in_air_minutes": 165
  },
  {
-  "segment_id": "S067",
+  "segment_id": "S091",
+  "flight": "NS 1708",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "TPA",
+  "depart_local": "2027-02-23T14:10",
+  "arrive_local": "2027-02-23T22:30",
+  "depart_utc": "2027-02-23T22:10Z",
+  "arrive_utc": "2027-02-24T03:30Z",
+  "in_air_minutes": 320
+ },
+ {
+  "segment_id": "S092",
+  "flight": "SJ 77",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "SEA",
+  "destination": "TPA",
+  "depart_local": "2027-02-23T06:50",
+  "arrive_local": "2027-02-23T15:12",
+  "depart_utc": "2027-02-23T14:50Z",
+  "arrive_utc": "2027-02-23T20:12Z",
+  "in_air_minutes": 322
+ },
+ {
+  "segment_id": "S093",
   "flight": "CW 2",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -871,7 +1209,7 @@
   "in_air_minutes": 345
  },
  {
-  "segment_id": "S068",
+  "segment_id": "S094",
   "flight": "NS 8",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -884,7 +1222,7 @@
   "in_air_minutes": 340
  },
  {
-  "segment_id": "S069",
+  "segment_id": "S095",
   "flight": "CW 10",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -897,7 +1235,7 @@
   "in_air_minutes": 338
  },
  {
-  "segment_id": "S070",
+  "segment_id": "S096",
   "flight": "SJ 33",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -910,7 +1248,33 @@
   "in_air_minutes": 336
  },
  {
-  "segment_id": "S071",
+  "segment_id": "S097",
+  "flight": "NS 12",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "HNL",
+  "destination": "SEA",
+  "depart_local": "2027-01-28T17:45",
+  "arrive_local": "2027-01-29T01:26",
+  "depart_utc": "2027-01-29T03:45Z",
+  "arrive_utc": "2027-01-29T09:26Z",
+  "in_air_minutes": 341
+ },
+ {
+  "segment_id": "S098",
+  "flight": "PB 300",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "HNL",
+  "destination": "SEA",
+  "depart_local": "2027-01-28T06:40",
+  "arrive_local": "2027-01-28T14:23",
+  "depart_utc": "2027-01-28T16:40Z",
+  "arrive_utc": "2027-01-28T22:23Z",
+  "in_air_minutes": 343
+ },
+ {
+  "segment_id": "S099",
   "flight": "CW 2210",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -923,7 +1287,7 @@
   "in_air_minutes": 55
  },
  {
-  "segment_id": "S072",
+  "segment_id": "S100",
   "flight": "CW 1906",
   "marketing_carrier": "CW",
   "operating_carrier": "CW",
@@ -936,7 +1300,7 @@
   "in_air_minutes": 345
  },
  {
-  "segment_id": "S073",
+  "segment_id": "S101",
   "flight": "NS 2214",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -949,7 +1313,7 @@
   "in_air_minutes": 50
  },
  {
-  "segment_id": "S074",
+  "segment_id": "S102",
   "flight": "NS 1930",
   "marketing_carrier": "NS",
   "operating_carrier": "NS",
@@ -962,7 +1326,7 @@
   "in_air_minutes": 330
  },
  {
-  "segment_id": "S075",
+  "segment_id": "S103",
   "flight": "SJ 512",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -975,7 +1339,7 @@
   "in_air_minutes": 150
  },
  {
-  "segment_id": "S076",
+  "segment_id": "S104",
   "flight": "SJ 1180",
   "marketing_carrier": "SJ",
   "operating_carrier": "SJ",
@@ -988,7 +1352,7 @@
   "in_air_minutes": 235
  },
  {
-  "segment_id": "S077",
+  "segment_id": "S105",
   "flight": "HL 1207",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -1001,7 +1365,7 @@
   "in_air_minutes": 240
  },
  {
-  "segment_id": "S078",
+  "segment_id": "S106",
   "flight": "HL 774",
   "marketing_carrier": "HL",
   "operating_carrier": "HL",
@@ -1012,5 +1376,499 @@
   "depart_utc": "2027-02-01T19:30Z",
   "arrive_utc": "2027-02-01T22:25Z",
   "in_air_minutes": 175
+ },
+ {
+  "segment_id": "S107",
+  "flight": "CW 2216",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "PDX",
+  "destination": "SEA",
+  "depart_local": "2027-02-01T17:00",
+  "arrive_local": "2027-02-01T17:55",
+  "depart_utc": "2027-02-02T01:00Z",
+  "arrive_utc": "2027-02-02T01:55Z",
+  "in_air_minutes": 55
+ },
+ {
+  "segment_id": "S108",
+  "flight": "CW 1910",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "SEA",
+  "destination": "MIA",
+  "depart_local": "2027-02-01T19:30",
+  "arrive_local": "2027-02-02T04:10",
+  "depart_utc": "2027-02-02T03:30Z",
+  "arrive_utc": "2027-02-02T09:10Z",
+  "in_air_minutes": 340
+ },
+ {
+  "segment_id": "S109",
+  "flight": "PB 1200",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "PDX",
+  "destination": "DEN",
+  "depart_local": "2027-02-01T12:30",
+  "arrive_local": "2027-02-01T16:00",
+  "depart_utc": "2027-02-01T20:30Z",
+  "arrive_utc": "2027-02-01T23:00Z",
+  "in_air_minutes": 150
+ },
+ {
+  "segment_id": "S110",
+  "flight": "PB 1188",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "DEN",
+  "destination": "MIA",
+  "depart_local": "2027-02-01T16:50",
+  "arrive_local": "2027-02-01T22:40",
+  "depart_utc": "2027-02-01T23:50Z",
+  "arrive_utc": "2027-02-02T03:40Z",
+  "in_air_minutes": 230
+ },
+ {
+  "segment_id": "S111",
+  "flight": "CW 71",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T04:59",
+  "arrive_local": "2027-02-11T07:34",
+  "depart_utc": "2027-02-11T09:59Z",
+  "arrive_utc": "2027-02-11T15:34Z",
+  "in_air_minutes": 335
+ },
+ {
+  "segment_id": "S112",
+  "flight": "NS 77",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T05:00",
+  "arrive_local": "2027-02-11T07:38",
+  "depart_utc": "2027-02-11T10:00Z",
+  "arrive_utc": "2027-02-11T15:38Z",
+  "in_air_minutes": 338
+ },
+ {
+  "segment_id": "S113",
+  "flight": "NS 81",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T17:30",
+  "arrive_local": "2027-02-11T20:15",
+  "depart_utc": "2027-02-11T22:30Z",
+  "arrive_utc": "2027-02-12T04:15Z",
+  "in_air_minutes": 345
+ },
+ {
+  "segment_id": "S114",
+  "flight": "CW 75",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T08:00",
+  "arrive_local": "2027-02-11T10:40",
+  "depart_utc": "2027-02-11T13:00Z",
+  "arrive_utc": "2027-02-11T18:40Z",
+  "in_air_minutes": 340
+ },
+ {
+  "segment_id": "S115",
+  "flight": "SJ 401",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T06:10",
+  "arrive_local": "2027-02-11T09:00",
+  "depart_utc": "2027-02-11T11:10Z",
+  "arrive_utc": "2027-02-11T17:00Z",
+  "in_air_minutes": 350
+ },
+ {
+  "segment_id": "S116",
+  "flight": "PB 505",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "JFK",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T21:30",
+  "arrive_local": "2027-02-12T00:22",
+  "depart_utc": "2027-02-12T02:30Z",
+  "arrive_utc": "2027-02-12T08:22Z",
+  "in_air_minutes": 352
+ },
+ {
+  "segment_id": "S117",
+  "flight": "NS 640",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "JFK",
+  "destination": "DEN",
+  "depart_local": "2027-02-11T09:00",
+  "arrive_local": "2027-02-11T11:30",
+  "depart_utc": "2027-02-11T14:00Z",
+  "arrive_utc": "2027-02-11T18:30Z",
+  "in_air_minutes": 270
+ },
+ {
+  "segment_id": "S118",
+  "flight": "NS 1702",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "DEN",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T14:40",
+  "arrive_local": "2027-02-11T16:10",
+  "depart_utc": "2027-02-11T21:40Z",
+  "arrive_utc": "2027-02-12T00:10Z",
+  "in_air_minutes": 150
+ },
+ {
+  "segment_id": "S119",
+  "flight": "HL 1301",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "JFK",
+  "destination": "ORD",
+  "depart_local": "2027-02-11T07:00",
+  "arrive_local": "2027-02-11T08:45",
+  "depart_utc": "2027-02-11T12:00Z",
+  "arrive_utc": "2027-02-11T14:45Z",
+  "in_air_minutes": 165
+ },
+ {
+  "segment_id": "S120",
+  "flight": "HL 790",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "ORD",
+  "destination": "LAX",
+  "depart_local": "2027-02-11T11:30",
+  "arrive_local": "2027-02-11T13:55",
+  "depart_utc": "2027-02-11T17:30Z",
+  "arrive_utc": "2027-02-11T21:55Z",
+  "in_air_minutes": 265
+ },
+ {
+  "segment_id": "S121",
+  "flight": "NS 70",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "HNL",
+  "destination": "LAX",
+  "depart_local": "2027-02-18T08:00",
+  "arrive_local": "2027-02-18T15:20",
+  "depart_utc": "2027-02-18T18:00Z",
+  "arrive_utc": "2027-02-18T23:20Z",
+  "in_air_minutes": 320
+ },
+ {
+  "segment_id": "S122",
+  "flight": "NS 440",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "LAX",
+  "destination": "YYZ",
+  "depart_local": "2027-02-18T17:10",
+  "arrive_local": "2027-02-19T00:40",
+  "depart_utc": "2027-02-19T01:10Z",
+  "arrive_utc": "2027-02-19T05:40Z",
+  "in_air_minutes": 270
+ },
+ {
+  "segment_id": "S123",
+  "flight": "CW 60",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "HNL",
+  "destination": "SFO",
+  "depart_local": "2027-02-18T09:00",
+  "arrive_local": "2027-02-18T16:00",
+  "depart_utc": "2027-02-18T19:00Z",
+  "arrive_utc": "2027-02-19T00:00Z",
+  "in_air_minutes": 300
+ },
+ {
+  "segment_id": "S124",
+  "flight": "CW 980",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "SFO",
+  "destination": "YYZ",
+  "depart_local": "2027-02-18T17:00",
+  "arrive_local": "2027-02-19T00:55",
+  "depart_utc": "2027-02-19T01:00Z",
+  "arrive_utc": "2027-02-19T05:55Z",
+  "in_air_minutes": 295
+ },
+ {
+  "segment_id": "S125",
+  "flight": "CW 90",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "HNL",
+  "destination": "DEN",
+  "depart_local": "2027-02-18T12:30",
+  "arrive_local": "2027-02-18T22:10",
+  "depart_utc": "2027-02-18T22:30Z",
+  "arrive_utc": "2027-02-19T05:10Z",
+  "in_air_minutes": 400
+ },
+ {
+  "segment_id": "S126",
+  "flight": "CW 1560",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "DEN",
+  "destination": "YYZ",
+  "depart_local": "2027-02-18T23:30",
+  "arrive_local": "2027-02-19T04:40",
+  "depart_utc": "2027-02-19T06:30Z",
+  "arrive_utc": "2027-02-19T09:40Z",
+  "in_air_minutes": 190
+ },
+ {
+  "segment_id": "S127",
+  "flight": "NS 20",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "HNL",
+  "destination": "SEA",
+  "depart_local": "2027-02-18T23:15",
+  "arrive_local": "2027-02-19T06:50",
+  "depart_utc": "2027-02-19T09:15Z",
+  "arrive_utc": "2027-02-19T14:50Z",
+  "in_air_minutes": 335
+ },
+ {
+  "segment_id": "S128",
+  "flight": "NS 1340",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "SEA",
+  "destination": "YYZ",
+  "depart_local": "2027-02-19T07:50",
+  "arrive_local": "2027-02-19T15:15",
+  "depart_utc": "2027-02-19T15:50Z",
+  "arrive_utc": "2027-02-19T20:15Z",
+  "in_air_minutes": 265
+ },
+ {
+  "segment_id": "S129",
+  "flight": "PB 310",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "HNL",
+  "destination": "LAX",
+  "depart_local": "2027-02-18T10:00",
+  "arrive_local": "2027-02-18T17:22",
+  "depart_utc": "2027-02-18T20:00Z",
+  "arrive_utc": "2027-02-19T01:22Z",
+  "in_air_minutes": 322
+ },
+ {
+  "segment_id": "S130",
+  "flight": "PB 1490",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "LAX",
+  "destination": "YYZ",
+  "depart_local": "2027-02-18T19:30",
+  "arrive_local": "2027-02-19T03:02",
+  "depart_utc": "2027-02-19T03:30Z",
+  "arrive_utc": "2027-02-19T08:02Z",
+  "in_air_minutes": 272
+ },
+ {
+  "segment_id": "S131",
+  "flight": "SJ 45",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "HNL",
+  "destination": "LAX",
+  "depart_local": "2027-02-18T07:30",
+  "arrive_local": "2027-02-18T14:55",
+  "depart_utc": "2027-02-18T17:30Z",
+  "arrive_utc": "2027-02-18T22:55Z",
+  "in_air_minutes": 325
+ },
+ {
+  "segment_id": "S132",
+  "flight": "SJ 902",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "LAX",
+  "destination": "YYZ",
+  "depart_local": "2027-02-18T16:45",
+  "arrive_local": "2027-02-19T00:20",
+  "depart_utc": "2027-02-19T00:45Z",
+  "arrive_utc": "2027-02-19T05:20Z",
+  "in_air_minutes": 275
+ },
+ {
+  "segment_id": "S133",
+  "flight": "HL 1500",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "HNL",
+  "destination": "ORD",
+  "depart_local": "2027-02-18T22:30",
+  "arrive_local": "2027-02-19T10:20",
+  "depart_utc": "2027-02-19T08:30Z",
+  "arrive_utc": "2027-02-19T16:20Z",
+  "in_air_minutes": 470
+ },
+ {
+  "segment_id": "S134",
+  "flight": "HL 1660",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "ORD",
+  "destination": "YYZ",
+  "depart_local": "2027-02-19T12:05",
+  "arrive_local": "2027-02-19T14:35",
+  "depart_utc": "2027-02-19T18:05Z",
+  "arrive_utc": "2027-02-19T19:35Z",
+  "in_air_minutes": 90
+ },
+ {
+  "segment_id": "S135",
+  "flight": "CW 1500",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T21:05",
+  "arrive_local": "2027-02-26T00:05",
+  "depart_utc": "2027-02-26T02:05Z",
+  "arrive_utc": "2027-02-26T07:05Z",
+  "in_air_minutes": 300
+ },
+ {
+  "segment_id": "S136",
+  "flight": "CW 1504",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T21:20",
+  "arrive_local": "2027-02-26T00:21",
+  "depart_utc": "2027-02-26T02:20Z",
+  "arrive_utc": "2027-02-26T07:21Z",
+  "in_air_minutes": 301
+ },
+ {
+  "segment_id": "S137",
+  "flight": "NS 630",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T06:45",
+  "arrive_local": "2027-02-25T09:43",
+  "depart_utc": "2027-02-25T11:45Z",
+  "arrive_utc": "2027-02-25T16:43Z",
+  "in_air_minutes": 298
+ },
+ {
+  "segment_id": "S138",
+  "flight": "NS 636",
+  "marketing_carrier": "NS",
+  "operating_carrier": "NS",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T13:10",
+  "arrive_local": "2027-02-25T16:06",
+  "depart_utc": "2027-02-25T18:10Z",
+  "arrive_utc": "2027-02-25T23:06Z",
+  "in_air_minutes": 296
+ },
+ {
+  "segment_id": "S139",
+  "flight": "SJ 220",
+  "marketing_carrier": "SJ",
+  "operating_carrier": "SJ",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T20:30",
+  "arrive_local": "2027-02-25T23:32",
+  "depart_utc": "2027-02-26T01:30Z",
+  "arrive_utc": "2027-02-26T06:32Z",
+  "in_air_minutes": 302
+ },
+ {
+  "segment_id": "S140",
+  "flight": "PB 44",
+  "marketing_carrier": "PB",
+  "operating_carrier": "PB",
+  "origin": "MIA",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T22:15",
+  "arrive_local": "2027-02-26T01:20",
+  "depart_utc": "2027-02-26T03:15Z",
+  "arrive_utc": "2027-02-26T08:20Z",
+  "in_air_minutes": 305
+ },
+ {
+  "segment_id": "S141",
+  "flight": "CW 1320",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "MIA",
+  "destination": "LAX",
+  "depart_local": "2027-02-25T23:40",
+  "arrive_local": "2027-02-26T02:10",
+  "depart_utc": "2027-02-26T04:40Z",
+  "arrive_utc": "2027-02-26T10:10Z",
+  "in_air_minutes": 330
+ },
+ {
+  "segment_id": "S142",
+  "flight": "CW 1700",
+  "marketing_carrier": "CW",
+  "operating_carrier": "CW",
+  "origin": "LAX",
+  "destination": "DEN",
+  "depart_local": "2027-02-26T07:30",
+  "arrive_local": "2027-02-26T10:50",
+  "depart_utc": "2027-02-26T15:30Z",
+  "arrive_utc": "2027-02-26T17:50Z",
+  "in_air_minutes": 140
+ },
+ {
+  "segment_id": "S143",
+  "flight": "HL 900",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "MIA",
+  "destination": "ORD",
+  "depart_local": "2027-02-25T07:00",
+  "arrive_local": "2027-02-25T09:05",
+  "depart_utc": "2027-02-25T12:00Z",
+  "arrive_utc": "2027-02-25T15:05Z",
+  "in_air_minutes": 185
+ },
+ {
+  "segment_id": "S144",
+  "flight": "HL 1210",
+  "marketing_carrier": "HL",
+  "operating_carrier": "HL",
+  "origin": "ORD",
+  "destination": "DEN",
+  "depart_local": "2027-02-25T11:30",
+  "arrive_local": "2027-02-25T13:10",
+  "depart_utc": "2027-02-25T17:30Z",
+  "arrive_utc": "2027-02-25T20:10Z",
+  "in_air_minutes": 160
  }
 ]

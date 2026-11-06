@@ -1,37 +1,41 @@
 {
  "scenario": "washington-policy-roundtable",
- "note": "CW 6 (08:00) and NS 1122 (10:00) are preferred nonstops at 33100, each 60 min from 09:00: itinerary_id decides, I115 (NS 1122) before I852 (CW 6). Domestic, no segment over 300: premium_economy. Washington D.C. cap 35000: Dupont Ivy at 34500.",
+ "note": "CW 6 (08:00) and NS 1122 (10:00) are preferred nonstops at 33100, each 60 min from 09:00: itinerary_id decides, I702 (CW 6) before I806 (NS 1122). NS 1130 (34700) and CW 14 (35900) follow on fare, then SJ 300, then the preferred CW connection before the HL one. Domestic, no segment over 300: premium_economy. Washington D.C. cap 35000: Dupont Ivy at 34500; Georgetown Canal House sits exactly at the cap.",
  "expected": {
   "ranked_itinerary_ids": [
-   "I115",
-   "I852",
-   "I486",
-   "I971",
-   "I192"
+   "I702",
+   "I806",
+   "I188",
+   "I489",
+   "I836",
+   "I907",
+   "I774"
   ],
-  "selected_itinerary_id": "I115",
+  "selected_itinerary_id": "I702",
   "allowed_cabin": "premium_economy",
-  "hotel_id": "H747"
+  "hotel_id": "H940"
  },
  "broken": [
   {
    "why": "breaks the full tie by departure order instead of itinerary_id",
    "change": {
     "ranked_itinerary_ids": [
-     "I852",
-     "I115",
-     "I486",
-     "I971",
-     "I192"
+     "I806",
+     "I702",
+     "I188",
+     "I489",
+     "I836",
+     "I907",
+     "I774"
     ],
-    "selected_itinerary_id": "I852"
+    "selected_itinerary_id": "I806"
    },
    "reason": "selected-correct"
   },
   {
    "why": "takes the second-cheapest hotel",
    "change": {
-    "hotel_id": "H238"
+    "hotel_id": "H959"
    },
    "reason": "hotel-correct"
   },
@@ -39,11 +43,13 @@
    "why": "ranks an id that does not exist",
    "change": {
     "ranked_itinerary_ids": [
-     "I115",
-     "I852",
-     "I486",
-     "I971",
-     "I192",
+     "I702",
+     "I806",
+     "I188",
+     "I489",
+     "I836",
+     "I907",
+     "I774",
      "I999"
     ]
    },
@@ -53,11 +59,13 @@
    "why": "ranks another trip's itinerary",
    "change": {
     "ranked_itinerary_ids": [
-     "I115",
-     "I852",
-     "I486",
-     "I971",
-     "I192",
+     "I702",
+     "I806",
+     "I188",
+     "I489",
+     "I836",
+     "I907",
+     "I774",
      "I973"
     ]
    },
@@ -67,12 +75,14 @@
    "why": "ranks an itinerary twice",
    "change": {
     "ranked_itinerary_ids": [
-     "I115",
-     "I852",
-     "I486",
-     "I971",
-     "I192",
-     "I115"
+     "I702",
+     "I806",
+     "I188",
+     "I489",
+     "I836",
+     "I907",
+     "I774",
+     "I702"
     ]
    },
    "reason": "ranked-unique"

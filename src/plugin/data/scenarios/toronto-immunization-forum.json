@@ -1,0 +1,10 @@
+{
+ "scenario": "toronto-immunization-forum",
+ "request_text": "Presenting our cold-chain monitoring results at the immunization forum in Toronto on February 19, flying out of Honolulu on the 18th, ideally around 8am. The only international flight in the mix is the hop into Toronto, under five hours, so I'm resigned to economy. The Queen West place is three hundred and a penny, which is close enough to the limit, surely.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V214",
+ "origin": "HNL",
+ "destination": "YYZ",
+ "departure_date": "2027-02-18",
+ "preferred_departure_local": "2027-02-18T08:00"
+}

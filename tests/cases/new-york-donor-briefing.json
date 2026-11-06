@@ -1,17 +1,19 @@
 {
  "scenario": "new-york-donor-briefing",
- "note": "CW 210 departs 21:01 and flies 318 min: the same segment is late and over 300, so business. It is the cheapest preferred nonstop (28400 vs NS 1404 29600). New York City's cap is 40000, so the Bryant Park Meridian at 36500 is allowed (it would fail a 30000 default).",
+ "note": "CW 210 departs 21:01 and flies 318 min: the same segment is late and over 300, so business. It is the cheapest preferred nonstop (28400 vs NS 1404 29600 vs NS 1410 31900). PB 90 (21:00, 22100) is the cheapest nonstop of all but not preferred, so it ranks after every preferred nonstop and before SJ 18. New York City's cap is 40000, so the Bryant Park Meridian at 36500 is allowed (it would fail a 30000 default).",
  "expected": {
   "ranked_itinerary_ids": [
-   "I552",
-   "I812",
    "I984",
+   "I157",
+   "I220",
+   "I116",
    "I419",
-   "I157"
+   "I184",
+   "I174"
   ],
-  "selected_itinerary_id": "I552",
+  "selected_itinerary_id": "I984",
   "allowed_cabin": "business",
-  "hotel_id": "H837"
+  "hotel_id": "H265"
  },
  "broken": [
   {
@@ -24,7 +26,7 @@
   {
    "why": "takes a pricier hotel",
    "change": {
-    "hotel_id": "H332"
+    "hotel_id": "H984"
    },
    "reason": "hotel-correct"
   },
@@ -32,10 +34,12 @@
    "why": "leaves a connection out of the ranking",
    "change": {
     "ranked_itinerary_ids": [
-     "I552",
-     "I812",
      "I984",
-     "I419"
+     "I157",
+     "I220",
+     "I116",
+     "I419",
+     "I184"
     ]
    },
    "reason": "ranked-complete"
@@ -43,9 +47,26 @@
   {
    "why": "books a hotel 500 cents over the New York City cap",
    "change": {
-    "hotel_id": "H913"
+    "hotel_id": "H819"
    },
    "reason": "hotel-within-cap"
+  },
+  {
+   "why": "ranks the cheapest nonstop first although it is not preferred",
+   "change": {
+    "ranked_itinerary_ids": [
+     "I116",
+     "I984",
+     "I157",
+     "I220",
+     "I419",
+     "I184",
+     "I174"
+    ],
+    "selected_itinerary_id": "I116",
+    "allowed_cabin": "premium_economy"
+   },
+   "reason": "selected-correct"
   }
  ]
 }

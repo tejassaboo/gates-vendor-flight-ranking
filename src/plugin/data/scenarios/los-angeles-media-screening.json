@@ -1,0 +1,10 @@
+{
+ "scenario": "los-angeles-media-screening",
+ "request_text": "Screening our maternal-health documentary for the foundation's media partners in Los Angeles on February 11. I'd love the pre-dawn Cascade flight just before 5am so I land by breakfast; a 4:59am departure is a morning flight, not a late-night one, so I assume premium economy is my ceiling. My producer swears by the Beverly Wilshire; otherwise anything on the west side works.",
+ "booking_date": "2026-11-02",
+ "traveler_id": "V213",
+ "origin": "JFK",
+ "destination": "LAX",
+ "departure_date": "2027-02-11",
+ "preferred_departure_local": "2027-02-11T05:30"
+}
